@@ -13,6 +13,11 @@
       "filename": "https://oracle-livelabs.github.io/common/labs/cloud-login/cloud-login.md"
     },
     {
+      "title": "Lab 1: Setup WebCenter Content Marketplace Instance",
+      "description": "How to provision the workshop environment and connect to it",
+      "filename": "https://oracle-livelabs.github.io/weblogic/webcenter-content/wcc-rfp-mgmt/02-wcc-environment-setup/02-wcc-environment-setup.md"
+    },
+    {
       "title": "Need Help?",
       "description": "Solutions to Common Problems and Directions for Receiving Live Help",
       "filename": "https://oracle-livelabs.github.io/common/labs/need-help/need-help-freetier.md"
