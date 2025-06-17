@@ -5,7 +5,7 @@
     {
       "title": "Introduction",
       "description": "This lab provides detailed guide to extend Oracle Fusion Applications with WebCenter Content based managed attachments",
-      "filename": "./../../introduction/introduction.md"
+      "filename": "../../introduction/introduction.md"
     },
     {
       "title": "Get Started",
@@ -16,6 +16,11 @@
       "title": "Lab 1: Setup WebCenter Content Marketplace Instance",
       "description": "How to provision the workshop environment and connect to it",
       "filename": "https://oracle-livelabs.github.io/weblogic/webcenter-content/wcc-rfp-mgmt/02-wcc-environment-setup/02-wcc-environment-setup.md"
+    },
+    {
+      "title": "Lab 2: Configure WebCenter Content for FA Integration",
+      "description": "How to configure WebCenter Content for FA Integration",
+      "filename": "../../config-wcc-fa/config-wcc-fa.md"
     },
     {
       "title": "Need Help?",

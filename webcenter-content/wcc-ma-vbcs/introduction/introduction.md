@@ -4,7 +4,7 @@ Learn how to extend Oracle Fusion Applications by adding Managed Attachments usi
 
 ## About this Workshop
 
-Organizations have requirements to attach supporting documents to specific records to various modules in Oracle Fusion Apps. This lab would help set it up with **Payables** - **Invoices** module as an example. 
+Organizations have requirements to attach supporting documents to specific records to various modules in Oracle Fusion Apps. This lab would help set it up with **Payables** - **Invoices** module as an example.
 
 *Estimated Time:* 3 hours
 
@@ -35,5 +35,5 @@ You may now **proceed to the next lab**.
 ## Acknowledgements
 
 * **Authors-** Ratheesh Pai, Senior Principal Member Technical Staff, Oracle WebCenter Content
-* **Contributors-** Ratheesh Pai, Rajiv Malhotra, Mandar Tengse 
+* **Contributors-** Ratheesh Pai, Rajiv Malhotra, Vinay Kumar
 * **Last Updated By/Date-** Ratheesh Pai, June 2025
