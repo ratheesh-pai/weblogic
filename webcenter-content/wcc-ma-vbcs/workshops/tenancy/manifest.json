@@ -43,6 +43,11 @@
       "filename": "../../create-vbcs-app/create-vbcs-app.md"
     },
     {
+      "title": "Lab 7: Use Page Composer to Insert Managed Attachments Link in Fusion Applications Page",
+      "description": "Use Page Composer to Insert Managed Attachments Link in Fusion Applications Page",
+      "filename": "../../ma-page-composer/ma-page-composer.md"
+    },
+    {
       "title": "Need Help?",
       "description": "Solutions to Common Problems and Directions for Receiving Live Help",
       "filename": "https://oracle-livelabs.github.io/common/labs/need-help/need-help-freetier.md"
