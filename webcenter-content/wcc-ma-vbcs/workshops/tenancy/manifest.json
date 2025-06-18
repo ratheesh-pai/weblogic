@@ -33,6 +33,11 @@
       "filename": "../../validate-invoice/validate-invoice.md"
     },
     {
+      "title": "Lab 5: Create Custom Object-Based Webservice to Generate Managed Attachment GUID",
+      "description": "Create Custom Object-Based Webservice to Generate Managed Attachment GUID",
+      "filename": "../../fa-custom-obj-ws/fa-custom-obj-ws.md"
+    },
+    {
       "title": "Need Help?",
       "description": "Solutions to Common Problems and Directions for Receiving Live Help",
       "filename": "https://oracle-livelabs.github.io/common/labs/need-help/need-help-freetier.md"

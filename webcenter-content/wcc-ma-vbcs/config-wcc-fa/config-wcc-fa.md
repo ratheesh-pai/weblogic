@@ -28,9 +28,9 @@ Log in to **wls-1 of WebCenter Content stack VMs** and run the following command
 1. Change to oracle user
 
  ```bash
- <copy>
- sudo su - oracle
- </copy>
+<copy>
+sudo su - oracle
+</copy>
  ```
 
 2.For existing stacks after patching (This will have latest scripts and should be used as preferred location)
@@ -44,9 +44,9 @@ cd /u01/scripts/patch/lcm/sh
 For new stacks (If in case `configure_wcc_fa_adapter.sh` script is not found on above path)
 
  ```bash
- <copy>
- cd /u01/scripts/lcm/sh
- </copy>
+<copy>
+cd /u01/scripts/lcm/sh
+</copy>
  ```
 
 ### For IDCS SSO-based environments
@@ -54,7 +54,8 @@ For new stacks (If in case `configure_wcc_fa_adapter.sh` script is not found on 
 Run the configuration script with the following arguments.
 
 ```bash
-<copy>sh configure_wcc_fa_adapter.sh --fa_domain <fa-domain-host> --ucm_domain <ucm domain host> --idcs_user <WCC Idcs Administrator user>
+<copy>
+sh configure_wcc_fa_adapter.sh --fa_domain <fa-domain-host> --ucm_domain <ucm domain host> --idcs_user <WCC Idcs Administrator user>
 </copy>
 ```
 
