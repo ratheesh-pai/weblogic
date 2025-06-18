@@ -33,9 +33,14 @@
       "filename": "../../validate-invoice/validate-invoice.md"
     },
     {
-      "title": "Lab 5: Create Custom Object-Based Webservice to Generate Managed Attachment GUID",
-      "description": "Create Custom Object-Based Webservice to Generate Managed Attachment GUID",
+      "title": "Lab 5: Create Custom Object Based Webservice to Generate Managed Attachment GUID",
+      "description": "Create Custom Object Based Webservice to Generate Managed Attachment GUID",
       "filename": "../../fa-custom-obj-ws/fa-custom-obj-ws.md"
+    },
+    {
+      "title": "Lab 6: Create a VBCS Based Application Extension",
+      "description": "Create VBCS Based Application Extension",
+      "filename": "../../create-vbcs-app/create-vbcs-app.md"
     },
     {
       "title": "Need Help?",
