@@ -48,6 +48,11 @@
       "filename": "../../ma-page-composer/ma-page-composer.md"
     },
     {
+      "title": "Lab 8: Publish VBCS App Extension and Fusion Application Sandbox",
+      "description": "Publish VBCS App Extension and Fusion Application Sandbox",
+      "filename": "../../publish-changes/publish-changes.md"
+    },
+    {
       "title": "Need Help?",
       "description": "Solutions to Common Problems and Directions for Receiving Live Help",
       "filename": "https://oracle-livelabs.github.io/common/labs/need-help/need-help-freetier.md"
