@@ -23,6 +23,11 @@
       "filename": "../../config-wcc-fa/config-wcc-fa.md"
     },
     {
+      "title": "Lab 3: Create a sandbox and add WebCenter Content Grant Webservice in Fusion Apps",
+      "description": "How to create a sandbox and add WebCenter Content Grant Webservice in Fusion Apps ",
+      "filename": "../../fa-common/fa-common.md"
+    },
+    {
       "title": "Need Help?",
       "description": "Solutions to Common Problems and Directions for Receiving Live Help",
       "filename": "https://oracle-livelabs.github.io/common/labs/need-help/need-help-freetier.md"

@@ -19,8 +19,7 @@ In this lab, you will
 This lab assumes you have:
 
 - A Paid or LiveLabs Oracle Cloud account
-- You have completed:
-  - Lab: Setup WCC Marketplace Environment
+- All previous labs successfully completed
 
 ## Task 1: Run script to configure WebCenter Content for managed attachments
 
