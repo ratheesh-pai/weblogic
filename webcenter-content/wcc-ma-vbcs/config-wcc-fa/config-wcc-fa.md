@@ -83,6 +83,8 @@ sh configure_wcc_fa_adapter.sh --fa_domain <fa-domain-host> --ucm_domain <ucm do
 
 3. On the Configuration Information page, make a note of the value for the search engine under the System Configuration section.
 
+    ![This image shows Search Engine Information](images/search-engine.png "Search Engine Information")
+
 4. Under **Administration**, click **Oracle Advanced Security Configurations**.
 
 5. On the Oracle Advanced Security Configurations page, complete the following updates:
@@ -127,6 +129,8 @@ sh configure_wcc_fa_adapter.sh --fa_domain <fa-domain-host> --ucm_domain <ucm do
 
     d.  Click **Update**.
 
+    ![This image shows Advanced Security Configuration](images/advanced-security.png "Advanced Security Configuration")
+
 ## Task 3: Enable Webservice Security Policy for WebCenter Content Grant Webservice
 
 In case the required policy is already applied, skip this section.
@@ -134,14 +138,27 @@ In case the required policy is already applied, skip this section.
 1. Log in to Enterprise Manager as an administrator.
 
 2. Navigate to **UCM_Server1**, **Deployments**, **Oracle UCM Webservices**, **Modules and Components**, **Webservices**, **AfGrantService**, and then to **AfGrantAccessPort**.
+    ![This image shows UCM_Server1](images/ucm-server.png "UCM_Server1")
+
+    ![This image shows Oracle UCM WebServices](images/ucm-webservices.png "Oracle UCM WebServices")
+
+    ![This image shows WebCenter Content Grant WebService and Port](images/ucm-grant-ws.png "WebCenter Content Grant WebService and Port")
 
 3. Click **Attach/Detach policies**.
 
+   ![This image shows WebServices Attach/Detach Policies Link](images/attach-detach-1.png "WebServices Attach/Detach Policies Link")
+
 4. Click **Directly Attached Policies** and then click **Attach/Detach**.
 
-5. In the Available Policies section, search for `oracle/wss_http_token_service_policy`
+   ![This image shows WebServices Attach/Detach Policies Button](images/attach-detach-2.png "WebServices Attach/Detach Policies Button")
 
-6. Click **Attach**, click **Validate**, and then click **Ok**.
+5. In the **Available Policies** section, search for `oracle/wss_http_token_service_policy`, select row of the search result and click **Attach**
+
+   ![This image shows WebServices Search Policies](images/search-policy-1.png "WebServices Search Policies")
+
+6. Click **Validate** and then click **Ok**.
+
+   ![This image shows WebServices Attach Required Policy](images/attach-policy.png "WebServices Attach Required Policy")
 
 7. Restart all WebCenter Content servers.
 
