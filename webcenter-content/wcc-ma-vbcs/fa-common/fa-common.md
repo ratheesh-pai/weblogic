@@ -28,17 +28,27 @@ Create a sandbox to implement the Oracle Fusion Apps changes for this integratio
 
 2. Click the hamburger icon in the upper left corner of the page. Select the **Configuration** option from the menu and then select **Sandboxes**.
 
+   ![This image shows Fusion Apps Menu](images/fa-menu.png "Fusion Apps Menu")
+
+   ![This image shows Sandboxes Menu](images/sandboxes-menu.png "Sandboxes Menu")
+
 3. On the Create Sandbox page, complete the following fields:
 
     a.  On the Sandboxes page, click **Create Sandbox**.
 
-     ![The image shows the Create Sandbox page with fields such as Name, Description, Publishable, and the All Tools list. The option Yes is selected in the Publishable field in this example and the Application Composer check box is selected in the All Tools list.](./images/sandbox.png "The image shows the Create Sandbox page with fields such as Name, Description, Publishable, and the All Tools list. The option Yes is selected in the Publishable field in this example and the Application Composer check box is selected in the All Tools list.")
+    ![This image shows Create Sandbox Button](images/sandbox-create.png "Create Sandbox Button")
 
     b.  On the Create Sandbox page, specify a name for this sandbox in the **Name** field (for example, WebCenter Content Records Management Integration).
 
     c.  From the **All Tools** list, select the **Application Composer** and **Page Composer** check boxes.
 
+    ![The image shows the Create Sandbox page with fields such as Name, Description, Publishable, and the All Tools list. The option Yes is selected in the Publishable field in this example and the Application Composer check box is selected in the All Tools list.](./images/sandbox-1.png "The image shows the Create Sandbox page with fields such as Name, Description, Publishable, and the All Tools list. The option Yes is selected in the Publishable field in this example and the Application Composer check box is selected in the All Tools list.")
+
+        ![This image shows Page Composer Selection in All Tools list](images/sandbox-2.png "Page Composer Selection in All Tools list")
+
     d.  Click **Create and Enter**.
+
+    ![This image shows Create and Enter Button](images/sandbox-3.png "Create and Enter Button")
 
 ## Task 2: Create WebCenter Content Grant Webservice
 
