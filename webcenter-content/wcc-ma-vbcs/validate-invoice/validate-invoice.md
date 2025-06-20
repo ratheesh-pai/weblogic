@@ -26,11 +26,21 @@ This webservice will return the invoice based on the given invoice number if the
 
 1. To enter the **Application Composer** where you'll be making your WebCenter Content integration changes, click **Tools** in the upper left corner of the page and then select **Application Composer** from the drop-down list.
 
+   ![This image shows Application Composer Menu](images/app-composer.png "Application Composer Menu")
+
 2. Choose **Common Setup** and then **Web Services** from the left navigation menu.
+
+   ![This image shows Common Setup Menu Item](images/common-setup.png "Common Setup Menu Item")
+
+   ![This image shows Web Services Menu Item](images/webservices-menu.png "Web Services Menu Item")
 
 3. On the **Web Services** page, click the **Create a new Web Service** icon.
 
+   ![This image shows Create Webservice Button](images/webservices-create.png "Create Webservice Button")
+
 4. In the **Select Connection Type** dialog, select the **REST** option and click **OK**.
+
+   ![This image shows Create Webservice Connection Type](images/ws-rest-option.png "Create Webservice Connection Type")
 
 5. On the **Create REST Web Services Connection** page, complete the following fields:
 
@@ -48,6 +58,8 @@ This webservice will return the invoice based on the given invoice number if the
 
    c. Response Payload - Choose Code Sample and enter value as **{}**.
 
+   ![This image shows Create REST Webservice Connection Page](images/ws-create-rest.png "Create REST Webservice Connection Page")
+
 7. Click **Save and Close**.
 
 **Note**  
@@ -61,7 +73,11 @@ This global function calls **InvoiceWebservice** to check if the current user ha
 
 2. Choose **Common Setup** and then **Global Functions** from the left navigation menu.
 
+   ![This image shows Global Functions Menu Item](images/global-functions-menu.png "Global Functions Menu Item")
+
 3. On the **Global Functions** page, click the **Add a Global Function** icon.
+
+   ![This image shows Add Global Functions Button](images/functions-create-button.png "Add Global Functions Button")
 
 4. On the **Create Global Function** page, complete the following fields:
 
@@ -80,6 +96,8 @@ This global function calls **InvoiceWebservice** to check if the current user ha
 7. In the Edit Script field, paste the contents of the script.
 
 8. Click **Save and Close**.
+
+   ![This image shows Create Global Functions Page](images/functions-create-page.png "Create Global Functions Page")
 
 This function will be called in a subsequent lab. You may proceed to the next lab.
 
