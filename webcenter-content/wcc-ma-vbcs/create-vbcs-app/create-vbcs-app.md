@@ -33,7 +33,13 @@ This lab assumes you have:
 
 1. Select **Navigator**, **Configuration**, and then **Visual Builder** to navigate to Visual Builder Cloud Service.
 
+   ![This image shows Fusion Apps Menu](images/fa-menu.png "Fusion Apps Menu")
+
+   ![This image shows Visual Builder Menu](images/visual-builder-menu.png "Visual Builder Menu")
+
 2. Click **Create**.
+
+   ![This image shows Create New Project Button](images/create-project-button.png "Create New Project Button")
 
 3. Enter a name. For example: **WccManagedAttachmentProject**.
 
@@ -41,17 +47,25 @@ This lab assumes you have:
 
 5. Click **Next**.
 
+   ![This image shows Project Details Dialog](images/project-details.png "Project Details Dialog")
+
 6. Set **Template** to **Empty Project**.
 
 7. Click **Next**.
+
+   ![This image shows Project Template Dialog](images/project-template.png "Project Template Dialog")
 
 8. For **Project Properties** for **Wiki Markup**, select **Markdown**.
 
 9. Click **Next**.
 
+   ![This image shows Project Properties Dialog](images/project-properties.png "Project Properties Dialog")
+
 10. On the **Team** tab, add other members and their access to this project as per your requirements, and click **Add**.
 
 11. Click **Finish**.
+
+![This image shows Project Finish Dialog](images/project-finish.png "Project Finish Dialog")
 
 12. Wait for the project creation to finish.
 
