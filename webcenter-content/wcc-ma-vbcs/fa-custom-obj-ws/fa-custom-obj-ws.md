@@ -26,6 +26,8 @@ This lab assumes you have:
 
 1. Click the "+" sign next to **Custom Objects**.
 
+   ![This image shows Create Custom Object Button](images/cust-obj-create-button.png "Create Custom Object Button")
+
 2. Enter details of the custom object as follows:
 
    a. Display Label - **WccManagedAttachment**
@@ -42,13 +44,21 @@ This lab assumes you have:
 
    g. Description - **Wcc Managed Attachment**
 
+   ![This image shows Custom Object Create Dialog](images/cust-obj-create-dialog.png "Custom Object Create Dialog")
+
 3. Click OK and wait for the custom object to get created.
 
 4. Click **Pages** and click **Create Default Pages**.
 
+   ![This image shows Custom Object Pages Button](images/pages-button.png "Custom Object Pages Button")
+
+   ![This image shows Create Default Pages Button](images/create-default-pages.png "Create Default Pages Button")
+
 ## Task 2: Create a Function to Obtain and Expose the Managed Attachments GUID as a REST Webservice
 
 1. For custom object **WccManagedAttachment**, click **Server Scripts**, **Object Functions**, and then the **Add a new Object Function** button.
+
+   ![This image shows Create Custom Object Function Button](images/obj-func-new.png "Create Custom Object Function Button")
 
 2. Enter details as follows:
 
@@ -60,6 +70,8 @@ This lab assumes you have:
 
    d. Visibility - **Callable by External Systems**
 
+   ![This image shows Create Custom Object Function Fields](images/obj-func-create.png "Create Custom Object Function Fields")
+
 3. Parameters:
 
    Create parameters of type String with the following names:
@@ -70,11 +82,17 @@ This lab assumes you have:
 
     - boValue1, boValue2, boValue3, boValue4, boValue5
 
+   ![This image shows Create Custom Object Function Parameters](images/obj-func-params.png "Create Custom Object Function Parameters")
+
 4. Download the [custom object webservice](files/custom-obj-ws.groovy) groovy code.
 
 5. For script code paste the contents of the downloaded script.
 
+   ![This image shows Create Custom Object Function Script](images/obj-func-body.png "Create Custom Object Function Script")
+
 6. Click **Validate** and then **Save and Close**
+
+   ![This image shows Create Custom Object Function Validate and Save](images/obj-func-save.png "Create Custom Object Function Validate and Save")
 
 These variables are mandatory to be passed to the function.
 
@@ -113,7 +131,15 @@ where **ExpenseItemValidate** is the global function you have to create to verif
 
 1. Select **Navigator**, **Others**, and then **WccManagedAttachments**.
 
+   ![This image shows Fusion Apps Navigator Menu](images/fa-menu.png "Fusion Apps Navigator Menu")
+
+   ![This image shows WCC Managed Attachments Custom Object Menu Item](images/cust-obj-nav-menu.png "WCC Managed Attachments Custom Object Menu Item")
+
 2. Click **Create** and then **Save and Close**.
+
+   ![This image shows WCC Managed Attachments Custom Object Create Instance](images/cust-obj-inst-create.png "WCC Managed Attachments Custom Object Create Instance")
+
+   ![This image shows WCC Managed Attachments Custom Object Create Instance Save](images/cust-obj-inst-save.png "WCC Managed Attachments Custom Object Create Instance Save")
 
 3. To get the record ID of this object, run the following command on a Linux command line shell:
 
@@ -152,9 +178,13 @@ As you have created the record on which you will call the REST API, you will nee
 
 2. Select **Security**.
 
+   ![This image shows WCC Managed Attachments Custom Object Security Menu](images/cust-obj-sec-menu.png "WCC Managed Attachments Custom Object Security Menu")
+
 3. In the **Delete** field, deselect all the options.
 
 4. Click **Save and Close**.
+
+   ![This image shows WCC Managed Attachments Custom Object Change Delete Permissions](images/cust-obj-disable-del.png "WCC Managed Attachments Custom Object Change Delete Permissions")
 
 We will call this webservice in a subsequent lab. You may proceed to the next lab.
 
