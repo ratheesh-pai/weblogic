@@ -236,33 +236,39 @@ You should get appropriate response based on whether the invoice with InvoiceNum
 
 ## Task 6: Create Managed Attachment UI for the Application Extension
 
-1. Click **Workspaces** and then **WccManagedAttachmentWorkspace** to enter the workspace.
+1. Click the **App UIs** section.
 
-2. Click the **App UIs** section.
+2. Click the **+ App UI** button.
 
-3. Click the **+ App UI** button.
+3. Enter a name for the app UI (for example: **WccManagedAttachmentUI**) and click **Create**.
 
-4. Enter a name for the app UI (for example: **WccManagedAttachmentUI**) and click **Create**.
+![This image shows Create New App UI Button](images/app-ui-create.png "Create New App UI Button")
 
-5. In the App UI tree, click **wccmanagedattachmentui**, **main**, and then **main-start**.
+4. In the App UI tree, click UI name eg **wccmanagedattachmentui**, **main**, **main-start** and **Design** tab.
 
-6. Click the **Properties** tab on the right.
+5. Click the **Properties** tab on the right.
 
-7. Click **Select Page Template**.
+6. Click **Select Page Template**.
 
-8. Under **Page Content** select **Welcome Page Template** and click **Select**.
+![This image shows Select Page Template Button](images/page-template-select.png "Select Page Template Button")
 
-9. Click **Page Designer** tab and then select **Welcome Page Template** in **Design** tab.
+7. Under **Page Content** select **Welcome Page Template** and click **Select**.
 
-10. On the **Design** tab, select the template, select **Properties**, and provide a title in the **Page Title** field (for example: **Managed Attachments**).
+![This image shows Select Welcome Page Template Option](images/page-template-welcome.png "Select Welcome Page Template Option")
 
-11. Click the **Variables** tab and add variables with following IDs
+8. Click **Page Designer** tab and then select **Welcome Page Template** in **Design** tab.
+
+9. On the **Design** tab, select the template, select **Properties**, and provide a title in the **Page Title** field (for example: **Managed Attachments**).
+
+![This image shows Title Input For VBCS App Extension Page](images/page-properties.png "Title Input For VBCS App Extension Page")
+
+10. Click the **Variables** tab and add variables with following IDs by clicking **+ Variable** button
 
       - appName, boType
       - boKey1, boKey2, boKey3, boKey4, boKey5
       - boValue1, boValue2, boValue3, boValue4, boValue5
 
-12. For all the variables, specify the following:
+11. For all the variables, specify the following:
 
     a. Type - **String**
 
@@ -270,11 +276,13 @@ You should get appropriate response based on whether the invoice with InvoiceNum
 
     c. Access for application extensions - **Read/Write**
 
-    d. Input parameter check box - Select this check box.
+    d. Input parameter - Select **Enabled**.
 
     e. Pass on URL check box - Select this check box.
 
-13. Add a variable with **statusMessage** as the ID and with the following properties:
+![This image shows Create Variable for Managed Attachments VBCS Page](images/variables-create.png "Managed Attachments VBCS Page")
+
+12. Add a variable with **statusMessage** as the ID and with the following properties:
 
     a. Type - **String**
 
@@ -282,7 +290,9 @@ You should get appropriate response based on whether the invoice with InvoiceNum
 
     c. Access for application extensions - **Read/Write**
 
-    d. Input parameter check box - Deselect this check box.
+    d. Input parameter - Select **Disabled**.
+
+![This image shows Adding Variable for Status Message in Managed Attachments VBCS Page](images/variable-status-msg.png "Adding Variable for Status Message in Managed Attachments VBCS Page")
 
 ## Task 7: Add a Text Field to Show the Current Status of Processing
 
