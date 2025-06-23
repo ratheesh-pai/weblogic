@@ -199,32 +199,40 @@ The RestApi version **11.13.18.05** might change based on your environment.
 
 You can test whether this webservice call works correctly or not by following these steps:
 
-1. Click the service **WccManagedAttachmentService**, **Endpoints**, **/GetWccMaDocsUrl**, row with **POST** method and then the **Test** tab.
+1. Click the service **WccManagedAttachmentService**, **Endpoints**, **/GetWccMaDocsUrl**, row with **POST** method.
 
-2. In the **Body** tab, enter:
+![This image shows Service Connection Endpoints Link](images/endpoints.png "Service Connection Endpoints Link")
+
+2. Click the **Test** tab and in the **Body** tab, enter:
 
    a. Media type - **application/vnd.oracle.adf.action+json**
 
    b. Payload as type - **Text**
 
 3. Enter the following value:
+    
+    ```json
+    <copy>
+    {
+       "appName": "<appName>",
+       "boType": "Invoice",
+       "boKey1": "InvoiceNumber",
+       "boValue1": "<InvoiceNumber>"
+    }
+    </copy>
+    ```
 
-```json
-<copy>
-{
-   "appName": "<appName>",
-   "boType": "Invoice",
-   "boKey1": "InvoiceNumber",
-   "boValue1": "<InvoiceNumber>"
-}
-</copy>
-```
+4. Click **Send Request**.
+
+![This image shows Service Connection Test Dialog](images/service-conn-test.png "Service Connection Test Dialog")
 
 You should get appropriate response based on whether the invoice with InvoiceNumber is accessible to you or not.
 
 - If invoice is accessible, then the response will be a JSON response with value as GUID in the format "&afGuid={guid}".
 - If invoice is not accessible, then the response will be a JSON with an "{Error Message}".
 - If there is an error in the set-up, then an error indicating it will be displayed.
+
+![This image shows Service Connection Test Results](images/conn-test-result.png "Service Connection Test Results")
 
 ## Task 6: Create Managed Attachment UI for the Application Extension
 
