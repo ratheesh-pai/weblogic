@@ -131,11 +131,17 @@ This lab assumes you have:
 
 ## Task 4: Create VBCS Service for Managed Attachment Webservice
 
-1. Click **Workspaces** and then **WccManagedAttachmentWorkspace** to enter the workspace.
+1. Click **Workspaces** and then workspace name eg **WccManagedAttachmentWorkspace** to enter the workspace.
+
+![This image shows VBCS Workspace Enter Link](images/workspace-create.png "VBCS Workspace Enter Link")
 
 2. Click **Services** and then the **+ Service Connection** button.
 
+![This image shows Create New Service Connection Button](images/service-conn-new.png "Create New Service Connection Button")
+
 3. Select **Define by endpoint**.
+
+![This image shows Create New Service Connection Define By Endpoint Selection](images/service-conn-endpoint.png "Create New Service Connection Define By Endpoint Selection")
 
 4. Set **Method** to **POST**.
 
@@ -149,11 +155,15 @@ This lab assumes you have:
 
 7. Click **Create Backend**.
 
+![This image shows Create New Service Connection URL Details Dialog](images/service-conn-url.png "Create New Service Connection URL Details Dialog")
+
 8. On the next page, enter:
 
    a. Backend name  - **WccManagedAttachmentBackend**
 
    b. Authentication  - **Oracle Cloud Account**
+
+![This image shows Create New Service Connection Backend Specification Dialog](images/backend-new.png "Create New Service Connection Backend Specification Dialog")
 
 9. Click **Next** for service connection creation page.
 
@@ -161,9 +171,13 @@ This lab assumes you have:
 
    b. Select the **Accessible to application extensions** checkbox.
 
+![This image shows Create New Service Connection General Details Dialog](images/service-conn-general.png "Create New Service Connection General Details Dialog")
+
 10. Click the **Request** tab and then the **Headers** tab.
 
 11. Click **+ Static Header**.
+
+![This image shows Create New Service Connection Add Header Button](images/service-conn-headers.png "Create New Service Connection Add Header Button")
 
 12. Enter the following:
 
@@ -172,6 +186,8 @@ This lab assumes you have:
     b. value - **application/vnd.oracle.adf.action+json**
 
 13. Click **Create**.
+
+![This image shows Create New Service Connection Create Button](images/service-conn-create.png "Create New Service Connection Create Button")
 
 **Note:**
 
