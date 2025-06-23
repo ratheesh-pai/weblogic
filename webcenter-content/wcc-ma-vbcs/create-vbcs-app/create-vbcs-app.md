@@ -79,9 +79,13 @@ This lab assumes you have:
 
 4. Click **Create**.
 
+![This image shows Create Environment Screen](images/environments.png "Create Environment Screen")
+
 5. Select the Environment **FAEnvironment**.
 
 6. Click **Service Instances** and then click **+ Add Instance**.
+
+![This image shows Add Instance Button](images/add-instance-button.png "Add Instance Button")
 
 7. Complete the following:
 
@@ -101,21 +105,27 @@ This lab assumes you have:
 
 8. Click **Add**
 
+![This image shows Add Instance Dialog](images/add-instance.png "Add Instance Dialog")
+
 ## Task 3: Click VBCS Workspace for Application Extension
 
 1. In the project, click **Workspaces**, **New**, and then **Application Extension**.
 
-2. For **Workspace**, enter the extension name **WccManagedAttachmentWorkspace**.
+![This image shows Create New Workspace Button](images/workspaces-app-extn.png "Create New Workspace Button")
+
+2. For **Workspace**, enter the extension name eg **WccManagedAttachmentWorkspace**.
 
 3. The fields **Extension Id** and **Workspace Name** will be automatically populated.
 
-4. For **Development Environment**, choose the Fusion Application Cloud Service environment created earlier (**FAEnvironment**).
+4. For **Development Environment**, choose the Fusion Application Cloud Service environment created earlier eg (**FAEnvironment**).
 
 5. For **sandbox**, choose the sandbox created earlier.
 
 6. For **Git Repository**, select **Create new repository**. Enter a **name** and a **branch** for the repository.
 
 7. Click **Create**.
+
+![This image shows Create Workspace Dialog](images/workspace-create.png "Create Workspace Dialog")
 
 8. Wait for the application extension creation to finish.
 
