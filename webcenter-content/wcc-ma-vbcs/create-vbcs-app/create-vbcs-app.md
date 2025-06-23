@@ -65,7 +65,7 @@ This lab assumes you have:
 
 11. Click **Finish**.
 
-![This image shows Project Finish Dialog](images/project-finish.png "Project Finish Dialog")
+    ![This image shows Project Finish Dialog](images/project-finish.png "Project Finish Dialog")
 
 12. Wait for the project creation to finish.
 
@@ -79,13 +79,13 @@ This lab assumes you have:
 
 4. Click **Create**.
 
-![This image shows Create Environment Screen](images/environments.png "Create Environment Screen")
+   ![This image shows Create Environment Screen](images/environments.png "Create Environment Screen")
 
 5. Select the Environment **FAEnvironment**.
 
 6. Click **Service Instances** and then click **+ Add Instance**.
 
-![This image shows Add Instance Button](images/add-instance-button.png "Add Instance Button")
+   ![This image shows Add Instance Button](images/add-instance-button.png "Add Instance Button")
 
 7. Complete the following:
 
@@ -111,7 +111,7 @@ This lab assumes you have:
 
 1. In the project, click **Workspaces**, **New**, and then **Application Extension**.
 
-![This image shows Create New Workspace Button](images/workspaces-app-extn.png "Create New Workspace Button")
+   ![This image shows Create New Workspace Button](images/workspaces-app-extn.png "Create New Workspace Button")
 
 2. For **Workspace**, enter the extension name eg **WccManagedAttachmentWorkspace**.
 
@@ -125,7 +125,7 @@ This lab assumes you have:
 
 7. Click **Create**.
 
-![This image shows Create Workspace Dialog](images/workspace-create.png "Create Workspace Dialog")
+   ![This image shows Create Workspace Dialog](images/workspace-create.png "Create Workspace Dialog")
 
 8. Wait for the application extension creation to finish.
 
@@ -133,15 +133,15 @@ This lab assumes you have:
 
 1. Click **Workspaces** and then workspace name eg **WccManagedAttachmentWorkspace** to enter the workspace.
 
-![This image shows VBCS Workspace Enter Link](images/workspace-create.png "VBCS Workspace Enter Link")
+   ![This image shows VBCS Workspace Enter Link](images/workspace-create.png "VBCS Workspace Enter Link")
 
 2. Click **Services** and then the **+ Service Connection** button.
 
-![This image shows Create New Service Connection Button](images/service-conn-new.png "Create New Service Connection Button")
+   ![This image shows Create New Service Connection Button](images/service-conn-new.png "Create New Service Connection Button")
 
 3. Select **Define by endpoint**.
 
-![This image shows Create New Service Connection Define By Endpoint Selection](images/service-conn-endpoint.png "Create New Service Connection Define By Endpoint Selection")
+   ![This image shows Create New Service Connection Define By Endpoint Selection](images/service-conn-endpoint.png "Create New Service Connection Define By Endpoint Selection")
 
 4. Set **Method** to **POST**.
 
@@ -155,7 +155,7 @@ This lab assumes you have:
 
 7. Click **Create Backend**.
 
-![This image shows Create New Service Connection URL Details Dialog](images/service-conn-url.png "Create New Service Connection URL Details Dialog")
+   ![This image shows Create New Service Connection URL Details Dialog](images/service-conn-url.png "Create New Service Connection URL Details Dialog")
 
 8. On the next page, enter:
 
@@ -163,7 +163,7 @@ This lab assumes you have:
 
    b. Authentication  - **Oracle Cloud Account**
 
-![This image shows Create New Service Connection Backend Specification Dialog](images/backend-new.png "Create New Service Connection Backend Specification Dialog")
+   ![This image shows Create New Service Connection Backend Specification Dialog](images/backend-new.png "Create New Service Connection Backend Specification Dialog")
 
 9. Click **Next** for service connection creation page.
 
@@ -171,13 +171,13 @@ This lab assumes you have:
 
    b. Select the **Accessible to application extensions** checkbox.
 
-![This image shows Create New Service Connection General Details Dialog](images/service-conn-general.png "Create New Service Connection General Details Dialog")
+   ![This image shows Create New Service Connection General Details Dialog](images/service-conn-general.png "Create New Service Connection General Details Dialog")
 
 10. Click the **Request** tab and then the **Headers** tab.
 
 11. Click **+ Static Header**.
 
-![This image shows Create New Service Connection Add Header Button](images/service-conn-headers.png "Create New Service Connection Add Header Button")
+    ![This image shows Create New Service Connection Add Header Button](images/service-conn-headers.png "Create New Service Connection Add Header Button")
 
 12. Enter the following:
 
@@ -187,7 +187,7 @@ This lab assumes you have:
 
 13. Click **Create**.
 
-![This image shows Create New Service Connection Create Button](images/service-conn-create.png "Create New Service Connection Create Button")
+    ![This image shows Create New Service Connection Create Button](images/service-conn-create.png "Create New Service Connection Create Button")
 
 **Note:**
 
@@ -201,7 +201,7 @@ You can test whether this webservice call works correctly or not by following th
 
 1. Click the service **WccManagedAttachmentService**, **Endpoints**, **/GetWccMaDocsUrl**, row with **POST** method.
 
-![This image shows Service Connection Endpoints Link](images/endpoints.png "Service Connection Endpoints Link")
+   ![This image shows Service Connection Endpoints Link](images/endpoints.png "Service Connection Endpoints Link")
 
 2. Click the **Test** tab and in the **Body** tab, enter:
 
@@ -210,7 +210,7 @@ You can test whether this webservice call works correctly or not by following th
    b. Payload as type - **Text**
 
 3. Enter the following value:
-    
+
     ```json
     <copy>
     {
@@ -224,7 +224,7 @@ You can test whether this webservice call works correctly or not by following th
 
 4. Click **Send Request**.
 
-![This image shows Service Connection Test Dialog](images/service-conn-test.png "Service Connection Test Dialog")
+   ![This image shows Service Connection Test Dialog](images/service-conn-test.png "Service Connection Test Dialog")
 
 You should get appropriate response based on whether the invoice with InvoiceNumber is accessible to you or not.
 
@@ -242,7 +242,7 @@ You should get appropriate response based on whether the invoice with InvoiceNum
 
 3. Enter a name for the app UI (for example: **WccManagedAttachmentUI**) and click **Create**.
 
-![This image shows Create New App UI Button](images/app-ui-create.png "Create New App UI Button")
+   ![This image shows Create New App UI Button](images/app-ui-create.png "Create New App UI Button")
 
 4. In the App UI tree, click UI name eg **wccmanagedattachmentui**, **main**, **main-start** and **Design** tab.
 
@@ -250,17 +250,17 @@ You should get appropriate response based on whether the invoice with InvoiceNum
 
 6. Click **Select Page Template**.
 
-![This image shows Select Page Template Button](images/page-template-select.png "Select Page Template Button")
+   ![This image shows Select Page Template Button](images/page-template-select.png "Select Page Template Button")
 
 7. Under **Page Content** select **Welcome Page Template** and click **Select**.
 
-![This image shows Select Welcome Page Template Option](images/page-template-welcome.png "Select Welcome Page Template Option")
+   ![This image shows Select Welcome Page Template Option](images/page-template-welcome.png "Select Welcome Page Template Option")
 
 8. Click **Page Designer** tab and then select **Welcome Page Template** in **Design** tab.
 
 9. On the **Design** tab, select the template, select **Properties**, and provide a title in the **Page Title** field (for example: **Managed Attachments**).
 
-![This image shows Title Input For VBCS App Extension Page](images/page-properties.png "Title Input For VBCS App Extension Page")
+   ![This image shows Title Input For VBCS App Extension Page](images/page-properties.png "Title Input For VBCS App Extension Page")
 
 10. Click the **Variables** tab and add variables with following IDs by clicking **+ Variable** button
 
@@ -280,7 +280,7 @@ You should get appropriate response based on whether the invoice with InvoiceNum
 
     e. Pass on URL check box - Select this check box.
 
-![This image shows Create Variable for Managed Attachments VBCS Page](images/variables-create.png "Managed Attachments VBCS Page")
+    ![This image shows Create Variable for Managed Attachments VBCS Page](images/variables-create.png "Managed Attachments VBCS Page")
 
 12. Add a variable with **statusMessage** as the ID and with the following properties:
 
@@ -304,7 +304,7 @@ You should get appropriate response based on whether the invoice with InvoiceNum
 
 4. In the search results select the component named **Text**, drag and drop it into the **Welcome Page Template**.
 
-![This image shows Adding Text Field Status Message in Managed Attachments VBCS Page](images/status-msg-field-add.png "Adding Text Field Status Message in Managed Attachments VBCS Page")
+   ![This image shows Adding Text Field Status Message in Managed Attachments VBCS Page](images/status-msg-field-add.png "Adding Text Field Status Message in Managed Attachments VBCS Page")
 
 5. Bind the text field to the **statusMessage** variable using the following steps:
 
@@ -389,7 +389,7 @@ You should get appropriate response based on whether the invoice with InvoiceNum
       ```
 
     ![This image shows Code To Call Service Endpoint](images/endpoint-call.png "Code To Call Service Endpoint")
-    
+
 13. In the code, replace **{WCCHost}** and **{WCCPort}** with the relevant host and port values as per your environment.
 
    ```javascript
@@ -402,7 +402,9 @@ In the code, there are Javascript console log statements for debugging on the br
 
 1. Click the **Preview** button at the top panel extreme right.
 
-   VBCS will compile the application and open a URL. The URL might fail now as we have not passed any relevant URL parameters.
+   VBCS will compile the application and open a URL in browser. The URL might fail now as we have not passed any relevant URL parameters.
+
+   ![This image shows VBCS App Preview Button](images/app-preview.png "VBCS App Preview Button")
 
 2. Copy the URL which will be in the following format and note it down.
 
