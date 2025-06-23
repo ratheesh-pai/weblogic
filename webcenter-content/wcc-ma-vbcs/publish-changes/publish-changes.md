@@ -33,12 +33,17 @@ This lab assumes you have:
 
 4. Select **Merge Now**, enter a commit message, and click **Publish**.
 
+   ![This image shows VBCS App Publish Dialog](images/vbcs-app-publish.png "VBCS App Publish Dialog")
+
 5. Enter Fusion Applications credentials if prompted.
 
 6. This will perform a schedule build of jobs whose status can be viewed by clicking **Builds** on the left pane.
 
 7. Wait for the publish job to complete.
-Now the published URL of VBCS app extension will be in following format ie without the extension version.
+
+   ![This image shows VBCS Application Extension Publish Status](images/app-publish-status.png "VBCS Application Extension Publish Status")
+
+Now the published URL of VBCS app extension will be in following format ie without the 'vbdt%3ApreferExtensionVersion' parameter which was in the preview URL.
 
 ```text
 https://{FAHost}/fscmUI/redwood/WccManagedAttachmentUI
@@ -60,13 +65,17 @@ Change it to the published URL which does not have the extension version (retain
 
 ## Task 3: Publish the Sandbox
 
-For publishing, enter the following sandbox details:
+1. Login to Fusion Apps as administrator
 
-Select the name of your sandbox in the upper left corner of the page (for example, WebCenter Content Managed Attachments Integration) and then select the **Sandbox Details** option from the drop-down menu.
+2. Select the name of your sandbox in the upper left corner of the page (for example, 'WebCenter Content Managed Attachments Integration') and then select the **Sandbox Details** option from the drop-down menu.
 
-On the Sandbox Details page, click **Publish** to publish the sandbox.
+   ![This image shows Sandbox Details Menu](images/sandbox-details.png "Sandbox Details Menu")
 
-In the warning message box, click **Yes** if you’re certain that the integration is working as expected and you’re ready to make these changes permanent (and public).
+3. On the Sandbox Details page, click **Publish** to publish the sandbox.
+
+   ![This image shows Sandbox Publish Button](images/sandbox-publish.png "Sandbox Publish Button")
+
+4. In the warning message box, click **Yes** if you’re certain that the integration is working as expected and you’re ready to make these changes permanent (and public).
 
 Users should now be able to use WebCenter Content Managed Attachments within the context of a **Payables**, **Invoices** module.
 

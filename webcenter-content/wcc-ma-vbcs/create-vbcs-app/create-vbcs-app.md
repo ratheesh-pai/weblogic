@@ -426,7 +426,7 @@ The VBCS application extension will call the Managed Attachment REST webservice,
 
 Before the VBCS app is published, the app URL will be in the above format with a reference to the extension version which can be used for testing.
 
-After it is published, the URL will be in the following format (without the extension version).
+After it is published, the URL will be in the following format (without the 'vbdt%3ApreferExtensionVersion' parameter which is in the preview URL).
 
 ```text
 https://{FAHost}/fscmUI/redwood/WccManagedAttachmentUI
