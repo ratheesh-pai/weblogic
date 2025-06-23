@@ -296,13 +296,15 @@ You should get appropriate response based on whether the invoice with InvoiceNum
 
 ## Task 7: Add a Text Field to Show the Current Status of Processing
 
-1. In the App UI tree, click **wccmanagedattachmentui**, **main**, and then **main-start**.
+1. In the App UI tree, click App name eg **wccmanagedattachmentui**, **main**, and then **main-start**.
 
 2. Click the **Page Designer** tab.
 
 3. On the left navigation pane, click **Components**, click **Text Box** input field on the top with the hint text **Filter**, and then search by typing the word **Text**.
 
-4. In the search results select the component named **Text**, drag and drop it into the *Welcome Page Template*.
+4. In the search results select the component named **Text**, drag and drop it into the **Welcome Page Template**.
+
+![This image shows Adding Text Field Status Message in Managed Attachments VBCS Page](images/status-msg-field-add.png "Adding Text Field Status Message in Managed Attachments VBCS Page")
 
 5. Bind the text field to the **statusMessage** variable using the following steps:
 
@@ -312,7 +314,11 @@ You should get appropriate response based on whether the invoice with InvoiceNum
 
    c. Click the **Text** field.
 
-   d. Click Icon **(x)** with text **Select variable**, select **Page**, select **variables**, and then select **statusMessage**.
+   d. Click Icon **(x)** with text **Select variable**, in text field type **statusMessage**, and then select **statusMessage** from results.
+
+![This image shows First Step In Binding Status Message Text Field in Managed Attachments VBCS Page To a Variable](images/status-msg-bind.png "First Step In Binding Status Message Text Field in Managed Attachments VBCS Page To a Variable")
+
+![This image shows Binding Status Message Text Field in Managed Attachments VBCS Page To a statusMessage Variable](images/status-msg-var.png "Binding Status Message Text Field in Managed Attachments VBCS Page To a statusMessage Variable")
 
 ## Task 8: Call the REST Webservice from the VBCS Management Attachment UI to Obtain the Attachment GUID
 
