@@ -322,7 +322,7 @@ You should get appropriate response based on whether the invoice with InvoiceNum
 
 ## Task 8: Call the REST Webservice from the VBCS Management Attachment UI to Obtain the Attachment GUID
 
-1. If you are not already in the **main-start** element in the App UI tree, click **wccmanagedattachmentui**, **main**, and then **main-start**.
+1. If you are not already in the **main-start** element in the App UI tree, click App name for eg **wccmanagedattachmentui**, **main**, and then **main-start**.
 
 2. Click **Action Chains** tab and then click **+ Action Chain**.
 
@@ -330,11 +330,21 @@ You should get appropriate response based on whether the invoice with InvoiceNum
 
 4. Click **Create**.
 
-5. Click the **Event Listeners** tab, click **+ Event Listener**, click **Lifecycle Events**, and then **vbEnter**.
+   ![This image shows Creating Action Chain Dialog](images/action-chain-create.png "Creating Action Chain Dialog")
+
+5. Click the **Event Listeners** tab, click **+ Event Listener**, click **Lifecycle Events**, **vbEnter** and lick **Next**.
+
+   ![This image shows Creating Event Listener Button](images/event-listener-button.png "Creating Event Listener Button")
+
+   ![This image shows Creating Event Listener Dialog for Lifecycle event vbEnter](images/event-listener-create-1.png "Creating Event Listener Dialog for Lifecycle event vbEnter")
 
 6. On the next page, for **Select Action chain**, select **Page Action Chains** and then **WccMaActionChain** and click **Finish**.
 
-7. Click **Action chains** and then **WccMaActionChain**.
+   ![This image shows Creating Event Listener Dialog Selecting Action Chain](images/event-listener-create-2.png "Creating Event Listener Dialog Selecting Action Chain")
+
+7. Click tab **Action chains** and then **WccMaActionChain**.
+
+   ![This image shows Selecting Action Chain to Edit](images/action-chain-select.png "Selecting Action Chain to Edit")
 
 8. Select the code editor by clicking the **code** tab. You should be in the **WccMaActionChain** code editor now.
 
@@ -350,6 +360,8 @@ You should get appropriate response based on whether the invoice with InvoiceNum
 
 10. Copy and paste the code from the script to the place indicated above.
 
+    ![This image shows Action Chain Code Location to Paste Code From Downloaded Script](images/action-chain-code.png "Action Chain Code Location to Paste Code From Downloaded Script")
+
 11. For the Rest API call, change the endpoint name **{Service Endpoint}** to your endpoint name.
 
 12. Alternatively, you can also use the following steps:
@@ -358,9 +370,13 @@ You should get appropriate response based on whether the invoice with InvoiceNum
 
     b. In properties panel click **Select** under **Endpoint**.
 
+    ![This image shows Service Endpoint Selection Link](images/endpoint-select-1.png "Service Endpoint Selection Link")
+
     c. In the selection popup expand Services, WccMaService.
 
     d. Select the element with text **POST .../GetWccMaDocsUrl**.
+
+    ![This image shows Service Endpoint Selection From List](images/endpoint-select-2.png "Service Endpoint Selection From List")
 
     e. In the window with code for the selected line make sure that the other properties, that is - **body**, **responseBodyFormat** to call the API are provided as specified below.
 
@@ -372,6 +388,8 @@ You should get appropriate response based on whether the invoice with InvoiceNum
       }, { id: 'GetWccMaDocsUrl' });
       ```
 
+    ![This image shows Code To Call Service Endpoint](images/endpoint-call.png "Code To Call Service Endpoint")
+    
 13. In the code, replace **{WCCHost}** and **{WCCPort}** with the relevant host and port values as per your environment.
 
    ```javascript
