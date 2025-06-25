@@ -4,12 +4,13 @@
 
 In this lab, we will configure WebCenter Content for Fusion Apps Integration
 
-**Estimated Lab Time**: *30 minutes*
+**Estimated Lab Time**: *45 minutes*
 
 ### Objectives
 
 In this lab, you will
 
+- Set Up DNS and SSL Certificate for WebCenter
 - Run configuration script which automatically configures most of WebCenter Content managed attachments settings
 - Enable Advanced Security in WebCenter Content
 - Enable Webservice Security Policy for WebCenter Content Grant Webservice
@@ -19,9 +20,93 @@ In this lab, you will
 This lab assumes you have:
 
 - A Paid or LiveLabs Oracle Cloud account
+- SSL certificate bundle file, root CA certificate file and certificate private key from registrar or SSL provider
 - All previous labs successfully completed
 
-## Task 1: Run script to configure WebCenter Content for managed attachments
+## Task 1: Set Up DNS and SSL Certificate for WebCenter
+
+This is needed for the SOAP webservice call from Fusion Apps to WebCenter Content to succeed.
+
+1. Log in to your OCI console account and create an API key for your user. For this, click the profile picture icon (profile) on the top right, and then click **My profile** which will take you to your user details page. On the bottom left, click **API Keys**, and then click **Add API Key**. Download the private key and then click **Add**. Copy the OCI configuration.
+
+2. Log in to **wls-1 of WebCenter Content stack VMs** and change to oracle user
+
+   ```bash
+   <copy>
+   sudo su - oracle
+   </copy>
+   ```
+
+3. Create a temporary directory `/u01/certs` and copy or download your SSL certificate for the host at this location. You might have a wild card certificate from your registrar or your SSL provider. For example, if you want to use host `wcc1.mycompany.com` to map to the load balancer, you may have a wild card certificate for `*.mycompany.com`. You might get a certificate file, a CA cert, and a private key for the SSL certificate. Copy everything to this location.
+
+4. Copy the private key file from step 1 to this location and name it **oci_user_pvt.key**. Create the OCI config file using the content from OCI config from step 1 here and update the property **key_file** to point to this private key file.
+
+   `key_file=/u01/certs/oci_user_pvt.key`
+
+5. The certificate file needs to be in a single concatenated pem file with host certificate at the top followed by intermediate certificate.
+
+   ```bash
+   <copy>
+   cat ssl_certificate.crt IntermediateCA.crt >> certbundle.pem
+   </copy>
+   ```
+
+6. Execute `dns_and_cert_manager.sh` script to install the load balancer certificate and create the DNS record.
+
+   ```text
+   sh dns_and_cert_manager.sh
+      -c : Certificate bundle file  [REQUIRED]
+      -a : Root CA certificate file [OPTIONAL]
+      -k : Certificate private key if available [OPTIONAL]
+      -p : Certificate private key password if applicable [OPTIONAL]
+      -z : DNS zone name [REQUIRED]
+      -d : Fully qualified domain name [REQUIRED]
+      -f : DNS oci user config file with API key [REQUIRED]
+      -t : Type of operation, it can be either DNS or CERT [OPTIONAL]
+   ```
+
+   ```bash
+   <copy>
+   # Go to scripts sh folder
+   cd /u01/scripts/lcm/sh
+
+   # Install load balancer certificate as well as create DNS record. Skip -t option to do both.
+   sh dns_and_cert_manager.sh -c /u01/certs/certbundle.pem -a /u01/certs/root_ca.pem -k /u01/certs/private.key -z mycompany.com -d wcc1.mycompany.com -f /u01/certs/config
+   </copy>
+   ```
+
+   **Note**: It will create the DNS record but it might take a couple of hours before the host URL can be used.
+
+7. The script will output the nameserver hosts corresponding to the DNS record. To register the external domain, you will need to add the nameserver hosts to your domain registrar.
+
+   Example:
+
+   ```text
+   ns1.p201.dns.oraclecloud.net
+   ns2.p201.dns.oraclecloud.net
+   ```
+
+8. Log in to your registrar (for example: namecheap, godaddy, etc.) where your external domain is registered. Navigate to your domain management option and add the nameservers that you copied in the previous step as custom DNS for your domain. You may need to go through their documentation or contact your registrar in case you cannot find this configuration.
+
+9. Log in to **wls-1 of WebCenter Content stack VMs** and update the service host to new value
+
+```bash
+<copy>
+sudo su - oracle
+cd /u01/scripts/lcm/sh
+nohup sh update_service_host.sh -s <wcc1.mycompany.com> &
+</copy>
+```
+
+The logs can be monitored using command for it to finish.
+
+```bash
+<copy>
+tail -f /u01/data/domains/logs/provisioning.log
+</copy>
+```
+
+## Task 2: Run script to configure WebCenter Content for managed attachments
 
 Log in to **wls-1 of WebCenter Content stack VMs** and run the following commands to configure it for FA integration.
 
@@ -75,7 +160,7 @@ sh configure_wcc_fa_adapter.sh --fa_domain <fa-domain-host> --ucm_domain <ucm do
 </copy>
 ```
 
-## Task 2: Enable Advanced Security in WebCenter Content
+## Task 3: Enable Advanced Security in WebCenter Content
 
 1. Log in to WebCenter Content as an administrator.
 
@@ -131,7 +216,7 @@ sh configure_wcc_fa_adapter.sh --fa_domain <fa-domain-host> --ucm_domain <ucm do
 
     ![This image shows Advanced Security Configuration](images/advanced-security.png "Advanced Security Configuration")
 
-## Task 3: Enable Webservice Security Policy for WebCenter Content Grant Webservice
+## Task 4: Enable Webservice Security Policy for WebCenter Content Grant Webservice
 
 In case the required policy is already applied, skip this section.
 
