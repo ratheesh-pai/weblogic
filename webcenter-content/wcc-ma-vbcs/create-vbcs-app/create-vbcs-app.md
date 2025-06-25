@@ -26,7 +26,7 @@ This lab assumes you have:
 
 - A Paid or LiveLabs Oracle Cloud account
 - All previous labs successfully completed
-- Access to Oracle Fusion Apps and associated Oracle Visual Builder Cloud Service
+- Access to an Oracle Fusion Applications instance with integrated Oracle Visual Builder Cloud Service.
 - Chrome browser as Visual Builder Cloud Service is supported only in Chrome browser.
 
 ## Task 1: Create a VBCS Project

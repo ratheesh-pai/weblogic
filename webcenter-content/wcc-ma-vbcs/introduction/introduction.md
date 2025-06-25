@@ -23,8 +23,8 @@ This lab assumes you have:
 
 * Paid or LiveLabs Oracle Cloud account, to provision WCC Marketplace instance
 * Familiarity with Oracle Cloud Infrastructure (OCI) is desirable, but not mandatory
-* Familiarity with Oracle Fusion Applications
-* Familiarity with Oracle Visual Builder Cloud Service
+* Access to an Oracle Fusion Applications instance with integrated Oracle Visual Builder Cloud Service.
+* Chrome browser as Oracle Visual Builder Cloud Service is supported only in Chrome browser.
 
 You may now **proceed to the next lab**.
 

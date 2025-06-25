@@ -4,7 +4,7 @@
 
 In this lab, we will use page composer to insert managed attachments Link in Fusion Applications page of **Payables**, **Invoices** module
 
-**Estimated Lab Time**: *10 minutes*
+**Estimated Lab Time**: *15 minutes*
 
 ### Objectives
 
@@ -17,7 +17,7 @@ In this lab, you will
 This lab assumes you have:
 
 - A Paid or LiveLabs Oracle Cloud account
-- Access to Oracle Fusion Apps
+- Access to an Oracle Fusion Applications instance with integrated Oracle Visual Builder Cloud Service.
 
 ## Task 1: Use Page Composer to Insert Managed Attachments Link in Fusion Applications Page
 

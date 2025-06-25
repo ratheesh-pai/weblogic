@@ -4,7 +4,7 @@
 
 In this lab we will publish the VBCS app extension and Fusion Application sandbox
 
-**Estimated Lab Time**: *15 minutes*
+**Estimated Lab Time**: *10 minutes*
 
 ### Objectives
 
@@ -20,8 +20,8 @@ This lab assumes you have:
 
 - A Paid or LiveLabs Oracle Cloud account
 - All previous labs successfully completed
-- Access to Oracle Fusion Apps and associated Oracle Visual Builder Cloud Service
-- Chrome browser as Visual Builder Cloud Service is supported only in Chrome browser.
+- Access to an Oracle Fusion Applications instance with integrated Oracle Visual Builder Cloud Service.
+- Chrome browser as Oracle Visual Builder Cloud Service is supported only in Chrome browser.
 
 ## Task 1: Publish the VBCS extension
 

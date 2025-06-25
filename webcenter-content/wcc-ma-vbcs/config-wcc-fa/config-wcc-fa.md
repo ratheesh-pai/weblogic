@@ -160,7 +160,17 @@ In case the required policy is already applied, skip this section.
 
    ![This image shows WebServices Attach Required Policy](images/attach-policy.png "WebServices Attach Required Policy")
 
-7. Restart all WebCenter Content servers.
+7. Restart all WebCenter Content servers using the steps mentioned in **Appendix 1: Restart WebCenter Content Server Instances**
+
+## Appendix 1: Restart WebCenter Content Server Instances
+
+1. Login to the WebCenter Content Weblogic console as administrator user.
+
+2. Navigate to **Environment** > **Servers** > **Control** tab and select the checkbox for **UCM Server**(s).
+
+3. click on **Shutdown** > **Force Shutdown**.
+
+4. After the Server changes to **SHUTDOWN** state, select the checkbox for **UCM Server**(s), click on **Start** button.
 
 ## Acknowledgements
 

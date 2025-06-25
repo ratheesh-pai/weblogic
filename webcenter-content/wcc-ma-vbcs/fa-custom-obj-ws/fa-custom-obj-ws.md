@@ -20,6 +20,7 @@ In this lab, you will
 This lab assumes you have:
 
 - A Paid or LiveLabs Oracle Cloud account
+- Access to an Oracle Fusion Applications instance with integrated Oracle Visual Builder Cloud Service.
 - All previous labs successfully completed
 
 ## Task 1: Create a Custom Business Object
