@@ -77,6 +77,8 @@ Change it to the published URL which does not have the extension version (retain
 
 4. In the warning message box, click **Yes** if you’re certain that the integration is working as expected and you’re ready to make these changes permanent (and public).
 
+In this environment SSO is not configured. So you need to use the same username as in Fusion Apps to login to WebCenter Content.
+
 Users should now be able to use WebCenter Content Managed Attachments within the context of a **Payables**, **Invoices** module.
 
 Organizations can now easily access, view, and upload assets associated with a **Payables**, **Invoices** module directly from the **Managed Attachments** tab with all material stored within Oracle WebCenter Content. The Oracle WebCenter Content Managed Attachment UI provides an easy and modern interface for contributing and storing content.

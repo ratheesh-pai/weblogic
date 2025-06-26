@@ -148,25 +148,7 @@ cd /u01/scripts/lcm/sh
 </copy>
  ```
 
-### For IDCS SSO-based environments
-
-Run the configuration script with the following arguments.
-
-```bash
-<copy>
-sh configure_wcc_fa_adapter.sh --fa_domain <fa-domain-host> --ucm_domain <ucm domain host> --idcs_user <WCC Idcs Administrator user>
-</copy>
-```
-
-When the script prompts for password input as shown below, enter the administrator password for WebCenter Content IDCS:
-
-```text
-Please provide IDCS User's Password:
-```
-
-### For non-IDCS SSO environments
-
-Run the configuration script with the following arguments.
+Run the configuration script with the following arguments. Since this lab environment is not configured with IDCS we do not need to provide SSO credentials option in the command line. 
 
 ```bash
 <copy>

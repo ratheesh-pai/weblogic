@@ -420,7 +420,9 @@ In the code, there are Javascript console log statements for debugging on the br
 
 Based on the type of object you are trying to integrate, the parameters may change and the URL may have additional key values pairs boKey2, boValue2 ... boKey5, and boValue5.
 
-The VBCS application extension will call the Managed Attachment REST webservice, obtain the unique GUID for the combination of keys passed, and open the associated managed attachments page.
+The VBCS application extension will call the Managed Attachment REST webservice, obtain the unique GUID for the combination of keys passed, and open the associated managed attachments page. 
+
+In this environment SSO is not configured. So you need to use the same username as in Fusion Apps to login to WebCenter Content.   
 
 **Note:**
 

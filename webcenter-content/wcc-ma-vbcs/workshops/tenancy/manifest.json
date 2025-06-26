@@ -13,42 +13,47 @@
       "filename": "https://oracle-livelabs.github.io/common/labs/cloud-login/cloud-login.md"
     },
     {
-      "title": "Lab 1: Setup WebCenter Content Marketplace Instance",
+      "title": "Lab 1: Prepare Setup",
+      "description": "Prepare tenancy for setting up WCC Marketplace instance, including VCN and Database",
+      "filename": "https://oracle-livelabs.github.io/weblogic/webcenter-content/wcc-rfp-mgmt/01-prepare-setup/01-prepare-setup.md"
+    },
+    {
+      "title": "Lab 2: Setup WebCenter Content Marketplace Instance",
       "description": "How to provision the workshop environment and connect to it",
       "filename": "https://oracle-livelabs.github.io/weblogic/webcenter-content/wcc-rfp-mgmt/02-wcc-environment-setup/02-wcc-environment-setup.md"
     },
     {
-      "title": "Lab 2: Configure WebCenter Content for FA Integration",
+      "title": "Lab 3: Configure WebCenter Content for FA Integration",
       "description": "How to configure WebCenter Content for FA Integration",
       "filename": "../../config-wcc-fa/config-wcc-fa.md"
     },
     {
-      "title": "Lab 3: Create a sandbox and add WebCenter Content Grant Webservice in Fusion Apps",
+      "title": "Lab 4: Create a sandbox and add WebCenter Content Grant Webservice in Fusion Apps",
       "description": "How to create a sandbox and add WebCenter Content Grant Webservice in Fusion Apps ",
       "filename": "../../fa-common/fa-common.md"
     },
     {
-      "title": "Lab 4: Validate Access to a Given Invoice Number for the Current User Using Fusion Cloud REST API",
+      "title": "Lab 5: Validate Access to a Given Invoice Number for the Current User Using Fusion Cloud REST API",
       "description": "Validate Access to a Given Invoice Number for the Current User Using Fusion Cloud REST API",
       "filename": "../../validate-invoice/validate-invoice.md"
     },
     {
-      "title": "Lab 5: Create Custom Object Based Webservice to Generate Managed Attachment GUID",
+      "title": "Lab 6: Create Custom Object Based Webservice to Generate Managed Attachment GUID",
       "description": "Create Custom Object Based Webservice to Generate Managed Attachment GUID",
       "filename": "../../fa-custom-obj-ws/fa-custom-obj-ws.md"
     },
     {
-      "title": "Lab 6: Create a VBCS Based Application Extension",
+      "title": "Lab 7: Create a VBCS Based Application Extension",
       "description": "Create VBCS Based Application Extension",
       "filename": "../../create-vbcs-app/create-vbcs-app.md"
     },
     {
-      "title": "Lab 7: Use Page Composer to Insert Managed Attachments Link in Fusion Applications Page",
+      "title": "Lab 8: Use Page Composer to Insert Managed Attachments Link in Fusion Applications Page",
       "description": "Use Page Composer to Insert Managed Attachments Link in Fusion Applications Page",
       "filename": "../../ma-page-composer/ma-page-composer.md"
     },
     {
-      "title": "Lab 8: Publish VBCS App Extension and Fusion Application Sandbox",
+      "title": "Lab 9: Publish VBCS App Extension and Fusion Application Sandbox",
       "description": "Publish VBCS App Extension and Fusion Application Sandbox",
       "filename": "../../publish-changes/publish-changes.md"
     },
