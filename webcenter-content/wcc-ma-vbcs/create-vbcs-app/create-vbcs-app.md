@@ -93,11 +93,11 @@ This lab assumes you have:
 
    b. Add Instance Using - Select **Identity Domain**.
 
-   c. In instance list select **Fusion Applications Cloud Service** and click **Add**. 
+   c. In instance list select **Fusion Applications Cloud Service** and click **Add**.
 
 ![This image shows Add Instance Dialog](images/add-instance.png "Add Instance Dialog")
 
-## Task 3: Click VBCS Workspace for Application Extension
+## Task 3: Create VBCS Workspace for Application Extension
 
 1. In the project, click **Workspaces**, **New**, and then **Application Extension**.
 
@@ -410,9 +410,9 @@ In the code, there are Javascript console log statements for debugging on the br
 
 Based on the type of object you are trying to integrate, the parameters may change and the URL may have additional key values pairs boKey2, boValue2 ... boKey5, and boValue5.
 
-The VBCS application extension will call the Managed Attachment REST webservice, obtain the unique GUID for the combination of keys passed, and open the associated managed attachments page. 
+The VBCS application extension will call the Managed Attachment REST webservice, obtain the unique GUID for the combination of keys passed, and open the associated managed attachments page.
 
-In this environment SSO is not configured. So you need to use the same username as in Fusion Apps to login to WebCenter Content.   
+In this environment SSO is not configured. So you need to use the same username as in Fusion Apps to login to WebCenter Content.
 
 **Note:**
 

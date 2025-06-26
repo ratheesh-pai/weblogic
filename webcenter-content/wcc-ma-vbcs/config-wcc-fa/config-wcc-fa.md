@@ -41,7 +41,27 @@ This is needed for the SOAP webservice call from Fusion Apps to WebCenter Conten
 
    ![This image shows OCI Copy API Key Configuration Button](images/oci-key-config-2.png "OCI Copy API Key Configuration Button")
 
-5. Log in to **wls-1 of WebCenter Content stack VMs** and change to oracle user
+5. Add policy for user to manage dns in DNS zone compartment. Navigate to **Identity & Security**, **Policies** and in the page click **Create Policy**.
+
+   ![This image shows OCI Policies Link](images/identity-policies.png "OCI Policies Link")
+
+   ![This image shows OCI Create Policy Button](images/create-policy-button.png "OCI Create Policy Button")
+
+6. Enter a name for the policy and click **Show manual editor**
+
+   ![This image shows OCI Create Policy 'Show manual editor' Button](images/policy-builder-manual.png "OCI Create Policy 'Show manual editor' Button")
+
+7. In policy text area enter below text and click **Create**. Here `<user-group>` is the group which user belongs and `<zone-compartment>` is the dns zone compartment.
+
+   ```text
+   <copy>
+   Allow <user-group> to manage dns on compartment <zone-compartment>
+   </copy>
+   ```
+
+   ![This image shows OCI Create Policy Page](images/create-policy-dns.png "OCI Create Policy Page")
+
+8. Log in to **wls-1 of WebCenter Content stack VMs** and change to oracle user
 
    ```bash
    <copy>
@@ -49,23 +69,23 @@ This is needed for the SOAP webservice call from Fusion Apps to WebCenter Conten
    </copy>
    ```
 
-6. Create a temporary directory `/u01/certs` and copy or download your SSL certificate for the host at this location. You might have a wild card certificate from your registrar or your SSL provider. For example, if you want to use host `wcc1.mycompany.com` to map to the load balancer, you may have a wild card certificate for `*.mycompany.com`. You might get a certificate file, a CA cert, and a private key for the SSL certificate. Copy everything to this location.
+9. Create a temporary directory `/u01/certs` and copy or download your SSL certificate for the host at this location. You might have a wild card certificate from your registrar or your SSL provider. For example, if you want to use host `wcc1.mycompany.com` to map to the load balancer, you may have a wild card certificate for `*.mycompany.com`. You might get a certificate file, a CA cert, and a private key for the SSL certificate. Copy everything to this location.
 
-7. Copy the ssh private key file from 'Lab 1 - Prepare Setup' to this location and name it **oci_user_pvt.key**.
+10. Copy the ssh private key file from 'Lab 1 - Prepare Setup' to this location and name it **oci_user_pvt.key**.
 
-8. Put the configuration file from step 3 in this location and update the property **key_file** to point to this private key file.
+11. Put the configuration file from step 3 in this location and update the property **key_file** to point to this private key file.
 
-   `key_file=/u01/certs/oci_user_pvt.key`
+    `key_file=/u01/certs/oci_user_pvt.key`
 
-9. The certificate file needs to be in a single concatenated pem file with host certificate at the top followed by intermediate certificate.
+12. The certificate file needs to be in a single concatenated pem file with host certificate at the top followed by intermediate certificate.
 
-   ```bash
-   <copy>
-   cat ssl_certificate.crt IntermediateCA.crt >> certbundle.pem
-   </copy>
-   ```
+    ```bash
+    <copy>
+    cat ssl_certificate.crt IntermediateCA.crt >> certbundle.pem
+    </copy>
+    ```
 
-10. Execute `dns_and_cert_manager.sh` script to install the load balancer certificate and create the DNS record.
+13. Execute `dns_and_cert_manager.sh` script to install the load balancer certificate and create the DNS record.
 
     ```text
     sh dns_and_cert_manager.sh
@@ -91,7 +111,7 @@ This is needed for the SOAP webservice call from Fusion Apps to WebCenter Conten
 
     **Note**: It will create the DNS record but it might take a couple of hours before the host URL can be used.
 
-11. The script will output the nameserver hosts corresponding to the DNS record. To register the external domain, you will need to add the nameserver hosts to your domain registrar.
+14. The script will output the nameserver hosts corresponding to the DNS record. To register the external domain, you will need to add the nameserver hosts to your domain registrar.
 
     Example:
 
@@ -100,9 +120,9 @@ This is needed for the SOAP webservice call from Fusion Apps to WebCenter Conten
     ns2.p201.dns.oraclecloud.net
     ```
 
-12. Log in to your registrar (for example: namecheap, godaddy, etc.) where your external domain is registered. Navigate to your domain management option and add the nameservers that you copied in the previous step as custom DNS for your domain. You may need to go through their documentation or contact your registrar in case you cannot find this configuration.
+15. Log in to your registrar (for example: namecheap, godaddy, etc.) where your external domain is registered. Navigate to your domain management option and add the nameservers that you copied in the previous step as custom DNS for your domain. You may need to go through their documentation or contact your registrar in case you cannot find this configuration.
 
-13. Log in to **wls-1 of WebCenter Content stack VMs** and update the service host to new value
+16. Log in to **wls-1 of WebCenter Content stack VMs** and update the service host to new value
 
 ```bash
 <copy>
@@ -148,7 +168,7 @@ cd /u01/scripts/lcm/sh
 </copy>
  ```
 
-Run the configuration script with the following arguments. Since this lab environment is not configured with IDCS we do not need to provide SSO credentials option in the command line. 
+Run the configuration script with the following arguments. Since this lab environment is not configured with IDCS we do not need to provide SSO credentials option in the command line.
 
 ```bash
 <copy>
