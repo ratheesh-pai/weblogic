@@ -4,7 +4,7 @@
 
 In this lab we will create a custom object-based webservice to generate managed attachment GUID
 
-**Estimated Lab Time**: *30 minutes*
+**Estimated Lab Time**: *45 minutes*
 
 ### Objectives
 
@@ -23,7 +23,41 @@ This lab assumes you have:
 - Access to an Oracle Fusion Applications instance with integrated Oracle Visual Builder Cloud Service.
 - All previous labs successfully completed
 
-## Task 1: Create a Custom Business Object
+## Task 1: Add user to Custom Objects Administration role - ORA_CRM_EXTN_ROLE
+
+1. Login to Fusion Apps as administrator
+
+2. Click navigation menu and **Tools**, **Security Console**
+
+   ![This image shows Fusion Apps Navigator Menu](images/fa-menu.png "Fusion Apps Navigator Menu")
+
+   ![This image shows Security Console Menu](images/security-console-menu.png "Security Console Menu")
+
+3. Click **Users**, enter username of user using the managed attachments solution in text field and click search icon
+
+4. In search results click username to go to user details page
+
+   ![This image shows Search Users Page](images/search-user.png "Search Users Page")
+
+5. Click **Edit** button and in the next page click **Add Role** button
+
+   ![This image shows User Details Page Edit Button](images/edit-user.png "User Details Page Edit Button")
+
+   ![This image shows Add Role Button](images/user-add-role.png "Add Role Button")
+
+6. In the dialog for **Search** select **Roles** in the text field enter **Custom Objects Administration** and click search icon.
+
+7. Select the **Custom Objects Administration** and click **Add Role Membership** and click **Done**
+
+   ![This image shows Add Role Dialog](images/add-role-dialog.png "Add Role Dialog")
+
+8. In the edit user page click **Done** and in next page click **Save and Close**.
+
+   ![This image shows Edit User Page 'Done' Button](images/user-edit-done.png "Edit User Page 'Done' Button")
+
+   ![This image shows Edit User Page 'Save and Close' Button](images/user-edit-save.png "Edit User Page 'Save and Close' Button")
+
+## Task 2: Create a Custom Business Object
 
 1. Click the "+" sign next to **Custom Objects**.
 
@@ -55,7 +89,7 @@ This lab assumes you have:
 
    ![This image shows Create Default Pages Button](images/create-default-pages.png "Create Default Pages Button")
 
-## Task 2: Create a Function to Obtain and Expose the Managed Attachments GUID as a REST Webservice
+## Task 3: Create a Function to Obtain and Expose the Managed Attachments GUID as a REST Webservice
 
 1. For custom object **WccManagedAttachment**, click **Server Scripts**, **Object Functions**, and then the **Add a new Object Function** button.
 
@@ -128,7 +162,7 @@ else if (boType == "ExpenseItem") {
 
 where **ExpenseItemValidate** is the global function you have to create to verify if the current user has access to the given expense item by calling Expense REST API of Fusion Cloud.
 
-## Task 3: Create a Custom Object Instance to Call the Managed Attachments REST Webservice
+## Task 4: Create a Custom Object Instance to Call the Managed Attachments REST Webservice
 
 1. Select **Navigator**, **Others**, and then **WccManagedAttachments**.
 
@@ -171,7 +205,7 @@ Example:
 
 We will call the row level REST API **GetWccMaDocsUrl** on this particular record. There is no other purpose for **WccManagedAttachment** object or this record. Its only purpose is to call this REST API. This particular record should not be deleted.
 
-## Task 4: Disable Delete of WccManagedAttachment Records
+## Task 5: Disable Delete of WccManagedAttachment Records
 
 As you have created the record on which you will call the REST API, you will need to disable the deletion of the records of this WccManagedAttachment object:
 
