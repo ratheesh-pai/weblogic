@@ -91,19 +91,9 @@ This lab assumes you have:
 
    a. Instance Type - Select **Oracle Cloud Applications**.
 
-   b. Add Instance Using - Select **Application Credentials**.
+   b. Add Instance Using - Select **Identity Domain**.
 
-   c. Base URL - **{FAUrl}**
-
-   d. Instance Name - {Name}
-
-   e. Username - {username}
-
-   f. Password - {password}
-
-   g. Authorization Type - Basic
-
-8. Click **Add**
+   c. In instance list select **Fusion Applications Cloud Service** and click **Add**. 
 
 ![This image shows Add Instance Dialog](images/add-instance.png "Add Instance Dialog")
 
