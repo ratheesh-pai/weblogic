@@ -27,7 +27,7 @@ This lab assumes you have:
 - A Paid or LiveLabs Oracle Cloud account
 - All previous labs successfully completed
 - Access to an Oracle Fusion Applications instance with integrated Oracle Visual Builder Cloud Service.
-- Chrome browser as Visual Builder Cloud Service is supported only in Chrome browser.
+- Chrome browser, as Visual Builder Cloud Service is supported only in Chrome browser.
 
 ## Task 1: Create a VBCS Project
 
@@ -81,7 +81,7 @@ This lab assumes you have:
 
    ![This image shows Create Environment Screen](images/environments.png "Create Environment Screen")
 
-5. Select the Environment **FAEnvironment**.
+5. Select the Environment with provided name eg **FAEnvironment**.
 
 6. Click **Service Instances** and then click **+ Add Instance**.
 
@@ -107,7 +107,7 @@ This lab assumes you have:
 
 3. The fields **Extension Id** and **Workspace Name** will be automatically populated.
 
-4. For **Development Environment**, choose the Fusion Application Cloud Service environment created earlier eg (**FAEnvironment**).
+4. For **Development Environment**, choose the Fusion Application Cloud Service environment created earlier eg **FAEnvironment**.
 
 5. For **sandbox**, choose the sandbox created earlier.
 
@@ -157,7 +157,7 @@ This lab assumes you have:
 
 9. Click **Next** for service connection creation page.
 
-   a. **Service name** - **WccManagedAttachmentService**
+   a. **Service name** - service name eg **WccManagedAttachmentService**
 
    b. Select the **Accessible to application extensions** checkbox.
 
@@ -398,21 +398,33 @@ In the code, there are Javascript console log statements for debugging on the br
 
 2. Copy the URL which will be in the following format and note it down.
 
-      ```text
-      https://{FAHost}/fscmUI/redwood/WccManagedAttachmentUI?vbdt%3ApreferExtensionVersion=<value>
-      ```
+   ```text
+   https://{FAHost}/fscmUI/redwood/WccManagedAttachmentUI?vbdt%3ApreferExtensionVersion=<value>
+   ```
 
 3. Test the URL in the browser by passing test parameters.
 
-      ```text
-      https://{FAHost}/fscmUI/redwood/WccManagedAttachmentUI?vbdt%3ApreferExtensionVersion=<value>&appName=<appName>&boType=Invoice&boKey1=InvoiceNumber&boValue1=<TestInvoiceNumber>
-      ```
+   ```text
+   https://{FAHost}/fscmUI/redwood/WccManagedAttachmentUI?vbdt%3ApreferExtensionVersion=<value>&appName=<appName>&boType=Invoice&boKey1=InvoiceNumber&boValue1=<TestInvoiceNumber>
+   ```
 
-Based on the type of object you are trying to integrate, the parameters may change and the URL may have additional key values pairs boKey2, boValue2 ... boKey5, and boValue5.
+   Based on the type of object you are trying to integrate, the parameters may change and the URL may have additional key values pairs boKey2, boValue2 ... boKey5, and boValue5.
 
-The VBCS application extension will call the Managed Attachment REST webservice, obtain the unique GUID for the combination of keys passed, and open the associated managed attachments page.
+   The VBCS application extension will call the Managed Attachment REST webservice, obtain the unique GUID for the combination of keys passed, and open the associated managed attachments page.
 
-In this environment SSO is not configured. So you need to use the same username as in Fusion Apps to login to WebCenter Content.
+   In this environment SSO is not configured. So for the login page you need to use the same username as in Fusion Apps to login to WebCenter Content.
+
+4. In the Managed Attachments page Click **Attach** button.
+
+   ![This image shows Managed Attachments Attach Button](images/ma-attach.png "Managed Attachments Attach Button")
+
+5. In **Document Upload** dialog click **+** button to open file chooser dialog. Select a file from file system and click **Upload** and wait for upload to finish.
+
+   ![This image shows Managed Attachments Upload Dialog](images/ma-upload-dialog.png "Managed Attachments Upload Dialog")
+
+6. Click **Close** button to close the dialog.
+
+   ![This image shows Managed Attachments Upload Dialog Close Button](images/ma-upload-close.png "Managed Attachments Upload Dialog Close Button")
 
 **Note:**
 

@@ -53,7 +53,7 @@ Create a sandbox to implement the Oracle Fusion Apps changes for this integratio
 
 ## Task 2: Create WebCenter Content Grant Webservice
 
-1. To enter the application composer where you\'ll be making your WebCenter Content integration changes, click **Tools** in the upper left corner of the page and then select **Application Composer** from the drop-down list.
+1. To enter the application composer where you will be making your WebCenter Content integration changes, click **Tools** in the upper left corner of the page and then select **Application Composer** from the drop-down list.
 
    ![This image shows Application Composer Menu](images/app-composer.png "Application Composer Menu")
 
@@ -87,9 +87,9 @@ Create a sandbox to implement the Oracle Fusion Apps changes for this integratio
 
      i.  Credential Key - Specify a name.
 
-     ii. User name - If WebCenter Content is configured with IDCS Single Sign-on, then specify the administrator name for WebCenter Content IDCS, otherwise, specify the administrator name for WebCenter Content Weblogic.
+     ii. User name - Specify the administrator name for WebCenter Content Weblogic as environment is not configured with IDCS SSO.
 
-     iii. Password - If WebCenter Content is configured with IDCS Single Sign-on, then specify the administrator password for WebCenter Content IDCS, otherwise, specify the administrator password for WebCenter Content Weblogic.
+     iii. Password - Specify the administrator password for WebCenter Content Weblogic as environment is not configured with IDCS SSO.
 
      ![This image shows Create Credentials Dialog](images/ws-credentials.png "Create Credentials Dialog")
 

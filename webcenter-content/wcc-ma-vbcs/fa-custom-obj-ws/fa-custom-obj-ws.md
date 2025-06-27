@@ -10,6 +10,7 @@ In this lab we will create a custom object-based webservice to generate managed 
 
 In this lab, you will
 
+- Add user to Custom Objects Administration role which is needed to create custom objects
 - Create a custom business object in Fusion Apps
 - Create a function to obtain and expose the managed attachments GUID as a REST webservice
 - Create a custom object instance to call the managed attachments REST webservice
@@ -23,7 +24,7 @@ This lab assumes you have:
 - Access to an Oracle Fusion Applications instance with integrated Oracle Visual Builder Cloud Service.
 - All previous labs successfully completed
 
-## Task 1: Add user to Custom Objects Administration role - ORA_CRM_EXTN_ROLE
+## Task 1: Add user to Custom Objects Administration role - `ORA_CRM_EXTN_ROLE`
 
 1. Login to Fusion Apps as administrator
 
@@ -141,8 +142,8 @@ The maximum character lengths of various parameters as they are mapped to above 
 
 - appName: 20
 - boType: 100
-- boKey\'s: 80
-- boValue\'s: 80
+- boKeys: 80
+- boValues: 80
 
 **Important:**
 

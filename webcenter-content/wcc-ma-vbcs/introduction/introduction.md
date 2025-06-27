@@ -16,6 +16,7 @@ In this lab, you will:
 * Configure WebCenter Content for Fusion Apps Integration
 * Create VBCS Based Application Extension
 * Use Page Composer to Insert Managed Attachments Link in Fusion Applications Page
+* Publish the application and use it
 
 ### **Prerequisites**
 
@@ -23,7 +24,7 @@ This lab assumes you have:
 
 * Paid or LiveLabs Oracle Cloud account, to provision WCC Marketplace instance
 * Familiarity with Oracle Cloud Infrastructure (OCI) is desirable, but not mandatory
-* SSL certificate bundle file, root CA certificate file and certificate private key from registrar or SSL provider
+* SSL certificate bundle file, root CA certificate file and certificate private key from registrar or SSL provider to configure SSL for Oracle WebCenter URL
 * Access to an Oracle Fusion Applications instance with integrated Oracle Visual Builder Cloud Service.
 * Chrome browser as Oracle Visual Builder Cloud Service is supported only in Chrome browser.
 

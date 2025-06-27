@@ -71,13 +71,15 @@ This is needed for the SOAP webservice call from Fusion Apps to WebCenter Conten
 
 9. Create a temporary directory `/u01/certs` and copy or download your SSL certificate for the host at this location. You might have a wild card certificate from your registrar or your SSL provider. For example, if you want to use host `wcc1.mycompany.com` to map to the load balancer, you may have a wild card certificate for `*.mycompany.com`. You might get a certificate file, a CA cert, and a private key for the SSL certificate. Copy everything to this location.
 
-10. Copy the ssh private key file from 'Lab 1 - Prepare Setup' to this location and name it **oci_user_pvt.key**.
+10. Copy the ssh private key file from 'Lab 1 - Prepare Setup' to this location and name it **`oci_user_pvt.key`**.
 
 11. Put the configuration file from step 3 in this location and update the property **key_file** to point to this private key file.
 
-    `key_file=/u01/certs/oci_user_pvt.key`
+    ```text
+    key_file=/u01/certs/oci_user_pvt.key
+    ```
 
-12. The certificate file needs to be in a single concatenated pem file with host certificate at the top followed by intermediate certificate.
+12. The certificate file needs to be in a single concatenated pem file with host certificate at the top followed by intermediate certificate. Execute the following command to concatenate the certificate files.
 
     ```bash
     <copy>
@@ -109,7 +111,7 @@ This is needed for the SOAP webservice call from Fusion Apps to WebCenter Conten
     </copy>
     ```
 
-    **Note**: It will create the DNS record but it might take a couple of hours before the host URL can be used.
+    **Note**: It will create the DNS record, but it might take a couple of hours before the host URL can be used.
 
 14. The script will output the nameserver hosts corresponding to the DNS record. To register the external domain, you will need to add the nameserver hosts to your domain registrar.
 
@@ -216,7 +218,7 @@ sh configure_wcc_fa_adapter.sh --fa_domain <fa-domain-host> --ucm_domain <ucm do
 
     b.  Custom table names: Leave this field blank.
 
-    c.  Custom field names: \<xCustomMetadataField1; xCustomMetadataField2; xCustomMetadataField3;\...\>
+    c.  Custom field names: `<xCustomMetadataField1; xCustomMetadataField2; xCustomMetadataField3;...>`
 
     d.  Click **Update**.
 
@@ -226,7 +228,7 @@ sh configure_wcc_fa_adapter.sh --fa_domain <fa-domain-host> --ucm_domain <ucm do
 
     b.  Custom table names: Leave this field blank.
 
-    c.  Custom field names: \<xCustomMetadataField1; xCustomMetadataField2; xCustomMetadataField3;\...\>
+    c.  Custom field names: `<xCustomMetadataField1; xCustomMetadataField2; xCustomMetadataField3;...>`
 
     d.  Click **Update**.
 
