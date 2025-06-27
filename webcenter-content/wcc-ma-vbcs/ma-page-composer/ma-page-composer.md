@@ -4,7 +4,7 @@
 
 In this lab, we will use page composer to insert managed attachments Link in Fusion Applications page of **Payables**, **Invoices** module
 
-**Estimated Lab Time**: *15 minutes*
+**Estimated Lab Time**: *20 minutes*
 
 ### Objectives
 

@@ -4,7 +4,7 @@
 
 For a given invoice, let us validate if the current user has access to the object. Only then corresponding managed attachments of the object will be shown to the user.
 
-**Estimated Lab Time**: *15 minutes*
+**Estimated Lab Time**: *20 minutes*
 
 ### Objectives
 

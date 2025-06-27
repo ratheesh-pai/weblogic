@@ -4,7 +4,7 @@
 
 In this lab, we will create a sandbox and add Grant Webservice in Fusion Apps
 
-**Estimated Lab Time**: *10 minutes*
+**Estimated Lab Time**: *15 minutes*
 
 ### Objectives
 
@@ -87,7 +87,7 @@ Create a sandbox to implement the Oracle Fusion Apps changes for this integratio
 
      i.  Credential Key - Specify a name.
 
-     ii. User name - Specify the administrator name for WebCenter Content Weblogic as environment is not configured with IDCS SSO.
+     ii. Username - Specify the administrator name for WebCenter Content Weblogic as environment is not configured with IDCS SSO.
 
      iii. Password - Specify the administrator password for WebCenter Content Weblogic as environment is not configured with IDCS SSO.
 

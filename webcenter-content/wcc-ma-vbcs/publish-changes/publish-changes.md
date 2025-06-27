@@ -4,7 +4,7 @@
 
 In this lab we will publish the VBCS app extension and Fusion Application sandbox
 
-**Estimated Lab Time**: *10 minutes*
+**Estimated Lab Time**: *20 minutes*
 
 ### Objectives
 
