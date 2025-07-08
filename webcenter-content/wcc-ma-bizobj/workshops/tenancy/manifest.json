@@ -1,0 +1,41 @@
+{
+  "workshoptitle": "Oracle Fusion Applications can be extended to add WebCenter Content based managed attachments",
+  "help": "mandar.x.tengse@oracle.com",
+  "tutorials": [
+    {
+      "title": "Introduction",
+      "description": "This lab provides detailed guide to extend Oracle Fusion Applications with WebCenter Content based managed attachments",
+      "filename": "../../introduction/introduction.md"
+    },
+    {
+      "title": "Get Started",
+      "description": "This is the prerequisites for customers using Free Trial and Paid tenancies, and Always Free accounts (if applicable). The title of the lab and the Contents Menu title (the title above) match for Prerequisite lab. This lab is always first.",
+      "filename": "https://oracle-livelabs.github.io/common/labs/cloud-login/cloud-login.md"
+    },
+    {
+      "title": "Lab 1: Prepare Setup",
+      "description": "Prepare tenancy for setting up WCC Marketplace instance, including VCN and Database",
+      "filename": "https://oracle-livelabs.github.io/weblogic/webcenter-content/wcc-document-security/01-prepare-setup/01-prepare-setup.md"
+    },
+    {
+      "title": "Lab 2: Setup WebCenter Content Marketplace Instance",
+      "description": "How to provision the workshop environment and connect to it",
+      "filename": "https://oracle-livelabs.github.io/weblogic/webcenter-content/wcc-document-security/02-wcc-environment-setup/02-wcc-environment-setup.md"
+    },
+    {
+      "title": "Lab 3: Configure WebCenter Content for FA Integration",
+      "description": "How to configure WebCenter Content for FA Integration",
+      "filename": "https://ratheesh-pai.github.io/weblogic/webcenter-content/wcc-ma-vbcs/config-wcc-fa/config-wcc-fa.md"
+    },
+    {
+      "title": "Lab 4: Create a sandbox and add WebCenter Content Grant Webservice in Fusion Apps",
+      "description": "How to create a sandbox and add WebCenter Content Grant Webservice in Fusion Apps ",
+      "filename": "https://ratheesh-pai.github.io/weblogic/webcenter-content/wcc-ma-vbcs/fa-common/fa-common.md"
+    },
+    {
+      "title": "Need Help?",
+      "description": "Solutions to Common Problems and Directions for Receiving Live Help",
+      "filename": "https://oracle-livelabs.github.io/common/labs/need-help/need-help-freetier.md"
+    }
+  ]
+}
