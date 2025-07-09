@@ -33,6 +33,11 @@
       "filename": "https://ratheesh-pai.github.io/weblogic/webcenter-content/wcc-ma-vbcs/fa-common/fa-common.md"
     },
     {
+      "title": "Lab 5: Extend Business Object To Get Managed Attachments Page And Embed In Module ",
+      "description": " Extend Business Object To Get Managed Attachments Page And Embed In Module ",
+      "filename": "../../config-biz-obj/config-biz-obj.md"
+    },
+    {
       "title": "Need Help?",
       "description": "Solutions to Common Problems and Directions for Receiving Live Help",
       "filename": "https://oracle-livelabs.github.io/common/labs/need-help/need-help-freetier.md"
