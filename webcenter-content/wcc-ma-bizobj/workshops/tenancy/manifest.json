@@ -33,9 +33,14 @@
       "filename": "https://ratheesh-pai.github.io/weblogic/webcenter-content/wcc-ma-vbcs/fa-common/fa-common.md"
     },
     {
-      "title": "Lab 5: Extend Business Object To Get Managed Attachments Page And Embed In Module ",
-      "description": " Extend Business Object To Get Managed Attachments Page And Embed In Module ",
+      "title": "Lab 5: Extend Business Object To Get Managed Attachments Page And Embed In Module",
+      "description": " Extend Business Object To Get Managed Attachments Page And Embed In Module",
       "filename": "../../config-biz-obj/config-biz-obj.md"
+    },
+    {
+      "title": "Lab 6: Verify Changes In Sandbox, Publish And Use The Integration",
+      "description": "Verify Changes In Sandbox, Publish And Use The Integration",
+      "filename": "../../sandbox-publish/sandbox-publish.md"
     },
     {
       "title": "Need Help?",
