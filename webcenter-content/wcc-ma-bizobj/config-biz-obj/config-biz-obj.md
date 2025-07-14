@@ -107,7 +107,13 @@ Business objects can be extended using a Mashup to expose an external applicatio
 
 1. Choose **Objects**, then **Standard Objects**, then **Service Request**, and then **Pages** from the left navigation menu.
 
-2. On the **Service Request:** Pages page, in the Details Page Layouts section, click the **Duplicate Details Page Layout** icon.
+   ![This image shows Standard Objects Node](images/standard-objects.png "Standard Objects Node")
+ 
+   ![This image shows Service Request Node](images/service-request-link.png "Service Request Node")
+
+2. On the **Service Request:** Pages page, in the **Details Page Layouts** section, select **Standard Layout** row and click the **Duplicate Details Page Layout** button.
+
+   ![This image shows Standard Layout Duplicate Button](images/duplicate-layout-button.png "Standard Layout Duplicate Button")
 
 3. In the Duplicate Layout dialog, complete the following fields:
 
@@ -117,11 +123,19 @@ Business objects can be extended using a Mashup to expose an external applicatio
 
    c.  Click **Save and Edit**.
 
+   ![This image shows Duplicate Layout Dialog](images/duplicate-layout-dialog.png "Duplicate Layout Dialog")
+
 4. In the Details Layout page, select the **Add** icon from the bottom of the left navigation menu in the Subtabs Region section to add the WebCenter Content embedded UI.
+
+   ![This image shows Add Subtab Button](images/add-subtab-button.png "Add Subtab Button")
 
 5. Select the **Mashup Content** option. Click **Next**.
 
-6. On the next page, select the **WebCenterContentEmbeddedAssetsUIMashup** option that was created earlier and click **Insert**.
+   ![This image shows Add Subtab Mashup Option](images/add-subtab-mashup.png "Add Subtab Mashup Option")
+
+6. On the next page, select the **WebCenterContentManagedAttachmentsUIMashup** option that was created earlier and click **Insert**.
+
+   ![This image shows Select Mashup and Insert Page](images/select-mashup-insert.png "Select Mashup and Insert Page")
 
 7. On the next page, complete the following fields:
 
@@ -146,7 +160,11 @@ Business objects can be extended using a Mashup to expose an external applicatio
 
    d.  Click **Next**.
 
+   ![This image shows Select Mashup and Insert Page](images/mashup-script.png "Select Mashup and Insert Page")
+
    e.  Click **Save and Close**.
+
+   ![This image shows Subtab Layout Selection Page](images/layout-selection.png "Subtab Layout Selection Page")
 
 ## Acknowledgements
 
