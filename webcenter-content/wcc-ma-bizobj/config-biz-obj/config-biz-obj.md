@@ -24,28 +24,41 @@ This lab assumes you have:
 
 ## Task 1: Create a Global Function to Call WebCenter Content Grant WebService
 
-1. Choose **Common Setup** and then **Global Functions** from the left navigation menu.
+1. Sign in to Oracle Fusion Apps as an administrator.
 
-2. On the Global Functions page, click the **Add a Global Function** icon.
+2. Click **Tools**, **Application Composer**.  
 
-3. On the Create Global Function page in the **Function Name** field, specify a name for eg  **WebCenterContentGrantWebserviceFunction**.
+   ![This image shows Application Composer Link](images/app-composer-link.png "Application Composer Link")
 
-4. Select **String** from the **Returns** drop-down menu.
+3. Choose **Common Setup** and then **Global Functions** from the left navigation menu.
 
-5. In the Parameters section, click the **Add Parameter** icon and add the following fields:
+   ![This image shows Global Functions Link](images/global-functions-link.png "Global Functions Link")
+
+4. On the Global Functions page, click the **Add a Global Function** button icon.
+
+   ![This image shows Global Functions Add Button](images/global-functions-add.png "Global Functions Add Button")
+
+5. On the Create Global Function page in the **Function Name** field, specify a name for eg  **WebCenterContentGrantWebserviceFunction**.
+
+6. Select **String** from the **Returns** drop-down menu.
+
+7. In the Parameters section, click the **Add Parameter** icon and add the following fields:
 
    a. Name - SrNumber
 
    b. Type - String
 
-6. Download the [Grant Webservice](files/grant-ws.groovy) groovy code.
+8. Download the [Grant Webservice](files/grant-ws.groovy) groovy code.
 
-7. In the **Edit Script** field, paste the contents of the downloaded script:
+9. In the **Edit Script** field, paste the contents of the downloaded script:
 
    **Note**:
    For **applicationName**, enter a name for your Sales cloud instance. For example, **`<MyCompany>SalesCloud`**.
 
-8. Click **Save and Close**.
+10. Click **Validate** and then **Save and Close**.
+
+    ![This image shows Add Global Function Details Dialog](images/global-functions-details.png "Add Global Function Details Dialog")
+
 
 About Grant webservice payload:
 
