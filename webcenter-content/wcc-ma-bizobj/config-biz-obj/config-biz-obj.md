@@ -77,7 +77,11 @@ A Mashup is a window into an independent external application such as WebCenter 
 
 1. Choose **Common Setup** and **Mashup Content** from the left navigation menu.
 
+   ![This image shows Mashup Content Link](images/mashup-link.png "Mashup Content Link")
+
 2. On the Mashup Content: Web Applications page, click **Register Web Application**.
+
+   ![This image shows Mashup Register Web Application Button](images/register-webapp-button.png "Mashup Register Web Application Button")
 
 3. On the Register Web Application page, complete the following fields:
 
@@ -94,6 +98,8 @@ A Mashup is a window into an independent external application such as WebCenter 
        ```
 
 4. Click **Save and Close**.
+
+   ![This image shows Mashup Register Web Application Details](images/register-webapp-details.png "Mashup Register Web Application Details")
 
 ## Task 3: Extend Specific Business Object To Show Managed Attachments Page
 
