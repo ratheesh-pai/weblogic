@@ -12,6 +12,8 @@ Organizations have requirements to attach supporting documents to specific recor
 
 The objective of this lab is to implement the ability to add attachments respective to a given record in **Service** - **Service Requests** module as an example. A standard business object associated with the module makes a SOAP call to WebCenter Content Grant webservices to get a URL with unique managed attachment GUID. This managed attachments page is inserted as a mashup in the module's page. The managed attachments page section is then used for attaching documents specific to the record.
 
+![This image shows Architecture Of Managed Attachments Using Application Composer based Standard Business Objects](images/arch-diagram.png "Architecture Of Managed Attachments Using Application Composer based Standard Business Objects")
+
 ### **Objectives**
 
 In this lab, you will:
