@@ -26,7 +26,7 @@ In this lab, you will:
 
 This lab assumes you have:
 
-* Paid or LiveLabs Oracle Cloud account, to provision WCC Marketplace instance
+* Paid or LiveLabs Oracle Cloud account
 * WCC Marketplace instance with HTTPS enabled Content Server URL
 * Access to an Oracle Fusion Applications instance.
 
