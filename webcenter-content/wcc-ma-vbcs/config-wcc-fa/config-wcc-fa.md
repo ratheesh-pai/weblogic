@@ -4,7 +4,7 @@
 
 In this lab, we will configure WebCenter Content for Fusion Apps Integration
 
-**Estimated Lab Time**: *45 minutes*
+**Estimated Lab Time**: *30 minutes*
 
 ### Objectives
 
@@ -62,8 +62,8 @@ sh configure_wcc_fa_adapter.sh --fa_domain <fa-domain-host> --ucm_domain <ucm do
 
 When the script prompts for password input as shown below, enter the administrator password for WebCenter Content IDCS:
 
-```
-Please provide IDCS User's Password: 
+```text
+Please provide IDCS User's Password:
 ```
 
 ### For non-IDCS SSO environments

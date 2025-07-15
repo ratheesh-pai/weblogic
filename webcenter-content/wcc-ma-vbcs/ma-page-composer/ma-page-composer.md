@@ -69,7 +69,7 @@ This lab assumes you have:
     </copy>
     ```
 
-    The URL is from the Lab 7 - `Create VBCS-Based Application Extension`. Replace values for **{version}**, **{appName}** as applicable. The parameter **boValue1** is set as a bindings parameter value of invoice number of the current invoice.
+    The URL is from the Lab 5 - `Create VBCS-Based Application Extension`. Replace values for **{version}**, **{appName}** as applicable. The parameter **boValue1** is set as a bindings parameter value of invoice number of the current invoice.
 
     b. Short Desc - **Documents**
 

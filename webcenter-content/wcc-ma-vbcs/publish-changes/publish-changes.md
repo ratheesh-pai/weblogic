@@ -50,7 +50,7 @@ https://{FAHost}/fscmUI/redwood/WccManagedAttachmentUI
 
 ## Task 2: Change the VBCS App Link URL to Published URL for the module
 
-On the **Payables**, **Invoices** page, we inserted the hyperlink as the URL under development (which has the extension version) using the steps in  `Lab 8 - Use Page Composer to Insert Managed Attachments Link in Fusion Applications Page`
+On the **Payables**, **Invoices** page, we inserted the hyperlink as the URL under development (which has the extension version) using the steps in  `Lab 6 - Use Page Composer to Insert Managed Attachments Link in Fusion Applications Page`
 
  ```text
  https://{FAHost}/fscmUI/redwood/WccManagedAttachmentUI?vbdt%3ApreferExtensionVersion=<value>&appName=<appName>&boType=Invoice&...
