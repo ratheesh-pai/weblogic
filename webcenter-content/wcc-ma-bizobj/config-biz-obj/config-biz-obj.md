@@ -59,7 +59,6 @@ This lab assumes you have:
 
     ![This image shows Add Global Function Details Dialog](images/global-functions-details.png "Add Global Function Details Dialog")
 
-
 About Grant webservice payload:
 
 You can specify up to 5 keys (businessObjectKey1 ... businessObjectKey5) and their corresponding values (businessObjectValue1 ... businessObjectValue5) respectively in the payload. The maximum character lengths of various parameters are:
@@ -108,7 +107,7 @@ Business objects can be extended using a Mashup to expose an external applicatio
 1. Choose **Objects**, then **Standard Objects**, then **Service Request**, and then **Pages** from the left navigation menu.
 
    ![This image shows Standard Objects Node](images/standard-objects.png "Standard Objects Node")
- 
+
    ![This image shows Service Request Node](images/service-request-link.png "Service Request Node")
 
 2. On the **Service Request:** Pages page, in the **Details Page Layouts** section, select **Standard Layout** row and click the **Duplicate Details Page Layout** button.
