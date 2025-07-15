@@ -19,7 +19,7 @@ This lab assumes you have:
 
 - A Paid or LiveLabs Oracle Cloud account
 - WCC Marketplace instance with HTTPS enabled Content Server URL
-- Access to an Oracle Fusion Applications instance with integrated Oracle Visual Builder Cloud Service.
+- Access to an Oracle Fusion Applications instance
 - All previous labs successfully completed
 
 ## Task 1: Create a sandbox in Fusion Apps
