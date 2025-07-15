@@ -88,9 +88,9 @@ Create a sandbox to implement the Oracle Fusion Apps changes for this integratio
 
      i.  Credential Key - Specify a name.
 
-     ii. Username - Specify the administrator name for WebCenter Content Weblogic as environment is not configured with IDCS SSO.
+     ii. Username - If WebCenter Content is configured with IDCS Single Sign-on, then specify the administrator name for WebCenter Content IDCS, otherwise, specify the administrator name for WebCenter Content Weblogic.
 
-     iii. Password - Specify the administrator password for WebCenter Content Weblogic as environment is not configured with IDCS SSO.
+     iii. Password - If WebCenter Content is configured with IDCS Single Sign-on, then specify the administrator password for WebCenter Content IDCS, otherwise, specify the administrator password for WebCenter Content Weblogic.
 
      ![This image shows Create Credentials Dialog](images/ws-credentials.png "Create Credentials Dialog")
 

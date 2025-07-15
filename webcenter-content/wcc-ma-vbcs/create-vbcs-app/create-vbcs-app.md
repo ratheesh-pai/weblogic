@@ -413,7 +413,7 @@ In the code, there are Javascript console log statements for debugging on the br
 
    The VBCS application extension will call the Managed Attachment REST webservice, obtain the unique GUID for the combination of keys passed, and open the associated managed attachments page.
 
-   In this environment SSO is not configured. So for the login page you need to use the same username as in Fusion Apps to login to WebCenter Content.
+   For the login page you need to use the same username as in Fusion Apps to login to WebCenter Content.
 
 4. In the Managed Attachments page Click **Attach** button.
 
