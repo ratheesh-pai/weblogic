@@ -76,7 +76,7 @@ This lab assumes you have:
 
 4. In the warning message box, click **Yes** if you’re certain that the integration is working as expected and you’re ready to make these changes permanent (and public).
 
-In this environment SSO is not configured. So for managed attachments you need to use the same username as in Fusion Apps to login to WebCenter Content.
+For managed attachments you need to use the same username as in Fusion Apps to login to WebCenter Content.
 
 Organizations can now easily access, view, and upload assets associated with a **Service**, **Service Requests** module directly from the **Managed Attachments** tab with all material stored within Oracle WebCenter Content. The Oracle WebCenter Content Managed Attachment UI provides an easy and modern interface for contributing and storing content.
 
