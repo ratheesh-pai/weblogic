@@ -25,6 +25,7 @@ In this lab, you will
 This lab assumes you have:
 
 - A Paid or LiveLabs Oracle Cloud account
+- WCC Marketplace instance with HTTPS enabled Content Server URL
 - All previous labs successfully completed
 - Access to an Oracle Fusion Applications instance with integrated Oracle Visual Builder Cloud Service.
 - Chrome browser, as Visual Builder Cloud Service is supported only in Chrome browser.

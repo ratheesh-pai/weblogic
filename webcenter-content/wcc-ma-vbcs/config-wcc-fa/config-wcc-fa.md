@@ -19,7 +19,7 @@ In this lab, you will
 This lab assumes you have:
 
 - A Paid or LiveLabs Oracle Cloud account
-- SSL certificate bundle file, root CA certificate file and certificate private key from registrar or SSL provider
+- WCC Marketplace instance with HTTPS enabled Content Server URL
 - All previous labs successfully completed
 
 ## Task 1: Run script to configure WebCenter Content for managed attachments
