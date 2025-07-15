@@ -18,7 +18,6 @@ The objective of this lab is to implement the ability to add attachments respect
 
 In this lab, you will:
 
-* Setup WCC Marketplace Environment
 * Configure WebCenter Content for Fusion Apps Integration
 * Use Application Composer to Insert Managed Attachments Page as a Mashup in Fusion Applications Page
 * Publish the application and use it
@@ -28,8 +27,7 @@ In this lab, you will:
 This lab assumes you have:
 
 * Paid or LiveLabs Oracle Cloud account, to provision WCC Marketplace instance
-* Familiarity with Oracle Cloud Infrastructure (OCI) is desirable, but not mandatory
-* SSL certificate bundle file, root CA certificate file and certificate private key from registrar or SSL provider to configure SSL for Oracle WebCenter URL
+* WCC Marketplace instance with HTTPS enabled Content Server URL
 * Access to an Oracle Fusion Applications instance.
 
 You may now **proceed to the next lab**.
