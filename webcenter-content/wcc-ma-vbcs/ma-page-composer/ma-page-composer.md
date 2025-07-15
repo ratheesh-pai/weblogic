@@ -17,7 +17,9 @@ In this lab, you will
 This lab assumes you have:
 
 - A Paid or LiveLabs Oracle Cloud account
+- WCC Marketplace instance with HTTPS enabled Content Server URL
 - Access to an Oracle Fusion Applications instance with integrated Oracle Visual Builder Cloud Service.
+- All previous labs successfully completed
 
 ## Task 1: Use Page Composer to Insert Managed Attachments Link in Fusion Applications Page
 
@@ -67,7 +69,7 @@ This lab assumes you have:
     </copy>
     ```
 
-    The URL is from the Lab 7 - `Create VBCS-Based Application Extension`. Replace values for **{version}**, **{appName}** as applicable. The parameter **boValue1** is set as a bindings parameter value of invoice number of the current invoice.
+    The URL is from the Lab 5 - `Create VBCS-Based Application Extension`. Replace values for **{version}**, **{appName}** as applicable. The parameter **boValue1** is set as a bindings parameter value of invoice number of the current invoice.
 
     b. Short Desc - **Documents**
 

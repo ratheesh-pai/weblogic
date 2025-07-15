@@ -25,6 +25,7 @@ In this lab, you will
 This lab assumes you have:
 
 - A Paid or LiveLabs Oracle Cloud account
+- WCC Marketplace instance with HTTPS enabled Content Server URL
 - All previous labs successfully completed
 - Access to an Oracle Fusion Applications instance with integrated Oracle Visual Builder Cloud Service.
 - Chrome browser, as Visual Builder Cloud Service is supported only in Chrome browser.
@@ -412,7 +413,7 @@ In the code, there are Javascript console log statements for debugging on the br
 
    The VBCS application extension will call the Managed Attachment REST webservice, obtain the unique GUID for the combination of keys passed, and open the associated managed attachments page.
 
-   In this environment SSO is not configured. So for the login page you need to use the same username as in Fusion Apps to login to WebCenter Content.
+   For the login page you need to use the same username as in Fusion Apps to login to WebCenter Content.
 
 4. In the Managed Attachments page Click **Attach** button.
 

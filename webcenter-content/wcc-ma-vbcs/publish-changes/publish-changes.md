@@ -19,6 +19,7 @@ In this lab, you will
 This lab assumes you have:
 
 - A Paid or LiveLabs Oracle Cloud account
+- WCC Marketplace instance with HTTPS enabled Content Server URL
 - All previous labs successfully completed
 - Access to an Oracle Fusion Applications instance with integrated Oracle Visual Builder Cloud Service.
 - Chrome browser, as Oracle Visual Builder Cloud Service is supported only in Chrome browser.
@@ -49,7 +50,7 @@ https://{FAHost}/fscmUI/redwood/WccManagedAttachmentUI
 
 ## Task 2: Change the VBCS App Link URL to Published URL for the module
 
-On the **Payables**, **Invoices** page, we inserted the hyperlink as the URL under development (which has the extension version) using the steps in  `Lab 8 - Use Page Composer to Insert Managed Attachments Link in Fusion Applications Page`
+On the **Payables**, **Invoices** page, we inserted the hyperlink as the URL under development (which has the extension version) using the steps in  `Lab 6 - Use Page Composer to Insert Managed Attachments Link in Fusion Applications Page`
 
  ```text
  https://{FAHost}/fscmUI/redwood/WccManagedAttachmentUI?vbdt%3ApreferExtensionVersion=<value>&appName=<appName>&boType=Invoice&...
@@ -75,11 +76,9 @@ Change it to the published URL which does not have the extension version (retain
 
 4. In the warning message box, click **Yes** if you’re certain that the integration is working as expected and you’re ready to make these changes permanent (and public).
 
-You should now be able to use WebCenter Content Managed Attachments within the context of a **Payables**, **Invoices** module by clicking the **Documents** link in the invoice details page.
+For managed attachments you need to use the same username as in Fusion Apps to login to WebCenter Content.
 
-In this environment SSO is not configured. So for managed attachments you need to use the same username as in Fusion Apps to login to WebCenter Content.
-
-Organizations can now easily access, view, and upload assets associated with a **Payables**, **Invoices** module directly from the **Managed Attachments** tab with all material stored within Oracle WebCenter Content. The Oracle WebCenter Content Managed Attachment UI provides an easy and modern interface for contributing and storing content.
+Organizations can now easily access, view, and upload assets associated with a **Payables**, **Invoices** module directly by clicking the **Documents** link in the invoice details page with all material stored within Oracle WebCenter Content. The Oracle WebCenter Content Managed Attachment UI provides an easy and modern interface for contributing and storing content.
 
 ## Acknowledgements
 
