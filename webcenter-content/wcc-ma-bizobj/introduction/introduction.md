@@ -6,7 +6,7 @@ Learn how to extend Oracle Fusion Applications by adding Managed Attachments usi
 
 Organizations have requirements to attach supporting documents to specific records to various modules in Oracle Fusion Apps. This lab would help set it up with **Service** - **Service Requests** module as an example.
 
-*Estimated Time:* 3 hours
+*Estimated Time:* 1 hour 45 min
 
 ### **About extending Oracle Fusion Applications by adding Managed Attachments using Application Composer based Standard Business Objects**
 

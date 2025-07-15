@@ -4,7 +4,7 @@
 
 In this lab we will verify changes in sandbox, publish it and use the integration.
 
-**Estimated Lab Time**: *30 minutes*
+**Estimated Lab Time**: *15 minutes*
 
 ### Objectives
 
