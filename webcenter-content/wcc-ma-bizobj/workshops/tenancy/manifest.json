@@ -13,32 +13,22 @@
       "filename": "https://oracle-livelabs.github.io/common/labs/cloud-login/cloud-login.md"
     },
     {
-      "title": "Lab 1: Prepare Setup",
-      "description": "Prepare tenancy for setting up WCC Marketplace instance, including VCN and Database",
-      "filename": "https://oracle-livelabs.github.io/weblogic/webcenter-content/wcc-document-security/01-prepare-setup/01-prepare-setup.md"
-    },
-    {
-      "title": "Lab 2: Setup WebCenter Content Marketplace Instance",
-      "description": "How to provision the workshop environment and connect to it",
-      "filename": "https://oracle-livelabs.github.io/weblogic/webcenter-content/wcc-document-security/02-wcc-environment-setup/02-wcc-environment-setup.md"
-    },
-    {
-      "title": "Lab 3: Configure WebCenter Content for FA Integration",
+      "title": "Lab 1: Configure WebCenter Content for FA Integration",
       "description": "How to configure WebCenter Content for FA Integration",
       "filename": "https://ratheesh-pai.github.io/weblogic/webcenter-content/wcc-ma-vbcs/config-wcc-fa/config-wcc-fa.md"
     },
     {
-      "title": "Lab 4: Create a sandbox and add WebCenter Content Grant Webservice in Fusion Apps",
+      "title": "Lab 2: Create a sandbox and add WebCenter Content Grant Webservice in Fusion Apps",
       "description": "How to create a sandbox and add WebCenter Content Grant Webservice in Fusion Apps ",
       "filename": "https://ratheesh-pai.github.io/weblogic/webcenter-content/wcc-ma-vbcs/fa-common/fa-common.md"
     },
     {
-      "title": "Lab 5: Extend Business Object To Get Managed Attachments Page And Embed In Module",
+      "title": "Lab 3: Extend Business Object To Get Managed Attachments Page And Embed In Module",
       "description": " Extend Business Object To Get Managed Attachments Page And Embed In Module",
       "filename": "../../config-biz-obj/config-biz-obj.md"
     },
     {
-      "title": "Lab 6: Verify Changes In Sandbox, Publish And Use The Integration",
+      "title": "Lab 4: Verify Changes In Sandbox, Publish And Use The Integration",
       "description": "Verify Changes In Sandbox, Publish And Use The Integration",
       "filename": "../../sandbox-publish/sandbox-publish.md"
     },
