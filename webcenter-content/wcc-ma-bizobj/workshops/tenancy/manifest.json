@@ -1,10 +1,10 @@
 {
-  "workshoptitle": "Oracle Fusion Applications can be extended to add WebCenter Content based managed attachments",
+  "workshoptitle": "Extend Oracle Fusion Apps to add WebCenter Content Managed Attachments using Application Composer based Standard Business Objects",
   "help": "mandar.x.tengse@oracle.com",
   "tutorials": [
     {
       "title": "Introduction",
-      "description": "This lab provides detailed guide to extend Oracle Fusion Applications with WebCenter Content based managed attachments",
+      "description": "This lab provides guide to extend Oracle Fusion Applications with WebCenter Content based managed attachments using Application Composer based Standard Business Objects",
       "filename": "../../introduction/introduction.md"
     },
     {
