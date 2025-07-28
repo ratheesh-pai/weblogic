@@ -1,10 +1,10 @@
 {
-  "workshoptitle": "Oracle Fusion Applications can be extended to add WebCenter Content based managed attachments",
+  "workshoptitle": "Extend Oracle Fusion Apps to add WebCenter Content managed attachments using Page Composer and Visual Builder Cloud Service",
   "help": "mandar.x.tengse@oracle.com",
   "tutorials": [
     {
       "title": "Introduction",
-      "description": "This lab provides detailed guide to extend Oracle Fusion Applications with WebCenter Content based managed attachments",
+      "description": "Extend Oracle Fusion Apps to add WebCenter Content managed attachments using Page Composer and Visual Builder Cloud Service",
       "filename": "../../introduction/introduction.md"
     },
     {
