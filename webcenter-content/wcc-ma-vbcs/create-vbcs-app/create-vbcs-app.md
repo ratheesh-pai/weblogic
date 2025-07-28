@@ -104,7 +104,7 @@ This lab assumes you have:
 
    ![This image shows Create New Workspace Button](images/workspaces-app-extn.png "Create New Workspace Button")
 
-2. For **Workspace**, enter the extension name eg **WccManagedAttachmentWorkspace**.
+2. For **Workspace**, enter the extension name eg **WccManagedAttachments**.
 
 3. The fields **Extension Id** and **Workspace Name** will be automatically populated.
 
@@ -122,9 +122,9 @@ This lab assumes you have:
 
 ## Task 4: Create VBCS Service for Managed Attachment Webservice
 
-1. Click **Workspaces** and then workspace name eg **WccManagedAttachmentWorkspace** to enter the workspace.
+1. Click **Workspaces** and then workspace name eg **WccManagedAttachments** to enter the workspace.
 
-   ![This image shows VBCS Workspace Enter Link](images/workspace-create.png "VBCS Workspace Enter Link")
+   ![This image shows VBCS Workspace Enter Link](images/workspace-enter.png "VBCS Workspace Enter Link")
 
 2. Click **Services** and then the **+ Service Connection** button.
 
@@ -140,7 +140,7 @@ This lab assumes you have:
 
    **https://{FAHost}/crmRestApi/resources/11.13.18.05/WccManagedAttachment_c/{Id}/action/GetWccMaDocsUrl**
 
-   where **{Id}** is the Id of **WccManagedAttachment** record we obtained from the earlier step.
+   where **{Id}** is the Id of **WccManagedAttachment** record we obtained from the earlier task : Lab 4 - `Create Custom Object-Based Webservice to Generate Managed Attachment GUID`, Task 4.
 
 6. Select **Update** from the **Action Hint** drop-down list.
 
@@ -213,6 +213,8 @@ You can test whether this webservice call works correctly or not by following th
     </copy>
     ```
 
+    Here replace '`<appName>`' with an App name for managed attachments and '`<InvoiceNumber>`' with a valid invoice number.
+
 4. Click **Send Request**.
 
    ![This image shows Service Connection Test Dialog](images/service-conn-test.png "Service Connection Test Dialog")
@@ -235,7 +237,7 @@ You should get appropriate response based on whether the invoice with InvoiceNum
 
    ![This image shows Create New App UI Button](images/app-ui-create.png "Create New App UI Button")
 
-4. In the App UI tree, click UI name eg **wccmanagedattachmentui**, **main**, **main-start** and **Design** tab.
+4. In the App UI tree, click UI name eg **wccmanagedattachmentui**, **main**, **main-start**, **Page Designer** tab and click **Design** tab.
 
 5. Click the **Properties** tab on the right.
 

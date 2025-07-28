@@ -35,7 +35,7 @@ This lab assumes you have:
 
    ![This image shows Security Console Menu](images/security-console-menu.png "Security Console Menu")
 
-3. Click **Users**, enter username of user using the managed attachments solution in text field and click search icon
+3. Click **Users**, enter managed attachments solutions user's name in search text field and click search button
 
 4. In search results click username to go to user details page
 
@@ -61,11 +61,15 @@ This lab assumes you have:
 
 ## Task 2: Create a Custom Business Object
 
-1. Click the "+" sign next to **Custom Objects**.
+1. Enter **Application Composer** by clicking **Tools** in the upper left corner of the page and then select **Application Composer** from the drop-down list.
+
+    ![This image shows Application Composer Menu](images/app-composer.png "Application Composer Menu")
+
+2. Click the "+" sign next to **Custom Objects**.
 
    ![This image shows Create Custom Object Button](images/cust-obj-create-button.png "Create Custom Object Button")
 
-2. Enter details of the custom object as follows:
+3. Enter details of the custom object as follows:
 
    a. Display Label - **WccManagedAttachment**
 
@@ -83,9 +87,9 @@ This lab assumes you have:
 
    ![This image shows Custom Object Create Dialog](images/cust-obj-create-dialog.png "Custom Object Create Dialog")
 
-3. Click OK and wait for the custom object to get created.
+4. Click OK and wait for the custom object to get created.
 
-4. Click **Pages** and click **Create Default Pages**.
+5. Click **Pages** and click **Create Default Pages**.
 
    ![This image shows Custom Object Pages Button](images/pages-button.png "Custom Object Pages Button")
 
